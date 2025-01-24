@@ -1,0 +1,16 @@
+﻿  glad.c
+  BallObject.cpp
+  Breakout.cpp
+C:\Users\jjs00\source\repos\hello_window\hello_window\Breakout.cpp(74,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Game.cpp
+  GameLevel.cpp
+C:\Users\jjs00\source\repos\hello_window\hello_window\GameLevel.cpp(58,25): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\jjs00\source\repos\hello_window\hello_window\GameLevel.cpp(59,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\jjs00\source\repos\hello_window\hello_window\GameLevel.cpp(60,76): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+  GameObject.cpp
+  ResourceManager.cpp
+  Shader.cpp
+  SpriteRenderer.cpp
+  Texture.cpp
+  Generating Code...
+  hello_window.vcxproj -> C:\Users\jjs00\source\repos\hello_window\x64\Debug\hello_window.exe
