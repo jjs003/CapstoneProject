@@ -27,6 +27,7 @@
     <ClCompile Include="glad.c" />
     <ClCompile Include="ResourceManager.cpp" />
     <ClCompile Include="Shader.cpp" />
+    <ClCompile Include="ParticleGenerator.cpp" />
     <ClCompile Include="SpriteRenderer.cpp" />
     <ClCompile Include="Texture.cpp" />
   </ItemGroup>
@@ -35,6 +36,7 @@
     <ClInclude Include="game.h" />
     <ClInclude Include="game_level.h" />
     <ClInclude Include="game_object.h" />
+    <ClInclude Include="particle_generator.h" />
     <ClInclude Include="resource_manager.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="sprite_renderer.h" />
@@ -46,6 +48,8 @@
     <None Include="..\levels\one.lvl" />
     <None Include="..\levels\three.lvl" />
     <None Include="..\levels\two.lvl" />
+    <None Include="..\shaders\particle.fs" />
+    <None Include="..\shaders\particle.vs" />
     <None Include="..\shaders\sprite.fs" />
     <None Include="..\shaders\sprite.vs" />
   </ItemGroup>
@@ -55,6 +59,7 @@
     <Image Include="..\textures\block.png" />
     <Image Include="..\textures\block_solid.png" />
     <Image Include="..\textures\paddle.png" />
+    <Image Include="..\textures\particle.png" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
