@@ -54,6 +54,9 @@
     <ClCompile Include="glad.c">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="ParticleGenerator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stb_image.h">
@@ -83,6 +86,9 @@
     <ClInclude Include="ball_object.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="particle_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\levels\four.lvl">
@@ -103,6 +109,12 @@
     <None Include="..\shaders\sprite.vs">
       <Filter>shaders</Filter>
     </None>
+    <None Include="..\shaders\particle.fs">
+      <Filter>shaders</Filter>
+    </None>
+    <None Include="..\shaders\particle.vs">
+      <Filter>shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Image Include="..\textures\awesomeface.png">
@@ -118,6 +130,9 @@
       <Filter>textures</Filter>
     </Image>
     <Image Include="..\textures\paddle.png">
+      <Filter>textures</Filter>
+    </Image>
+    <Image Include="..\textures\particle.png">
       <Filter>textures</Filter>
     </Image>
   </ItemGroup>

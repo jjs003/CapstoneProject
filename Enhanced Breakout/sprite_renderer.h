@@ -1,5 +1,3 @@
-
-
 /*******************************************************************
 ** This code is part of Breakout.
 **
@@ -8,6 +6,8 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
+
+
 #ifndef SPRITE_RENDERER_H
 #define SPRITE_RENDERER_H
 
@@ -18,21 +18,28 @@
 #include "texture.h"
 #include "shader.h"
 
-
+// SpriteRenderer class handles rendering textured sprites
 class SpriteRenderer
 {
 public:
-    // Constructor (inits shaders/shapes)
+    // Constructor: Initializes the shader for rendering
     SpriteRenderer(Shader& shader);
-    // Destructor
+
+    // Destructor: Cleans up any allocated OpenGL resources
     ~SpriteRenderer();
-    // Renders a defined quad textured with given sprite
+
+    // Renders a quad textured with the provided sprite
+    // Takes parameters for position, size, rotation, and color
     void DrawSprite(Texture2D& texture, glm::vec2 position, glm::vec2 size = glm::vec2(10.0f, 10.0f), float rotate = 0.0f, glm::vec3 color = glm::vec3(1.0f));
+
 private:
-    // Render state
+    // Shader used for rendering the sprite
     Shader       shader;
+
+    // VAO (Vertex Array Object) for the sprite's quad
     unsigned int quadVAO;
-    // Initializes and configures the quad's buffer and vertex attributes
+
+    // Initializes and configures the quad's buffer and vertex attributes for rendering
     void initRenderData();
 };
 

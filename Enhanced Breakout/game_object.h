@@ -6,6 +6,8 @@
 ** Creative Commons, either version 4 of the License, or (at your
 ** option) any later version.
 ******************************************************************/
+
+
 #ifndef GAMEOBJECT_H
 #define GAMEOBJECT_H
 
@@ -16,24 +18,32 @@
 #include "sprite_renderer.h"
 
 
-// Container object for holding all state relevant for a single
-// game object entity. Each object in the game likely needs the
-// minimal of state as described within GameObject.
+// GameObject serves as a container for all relevant state
+// needed for a single entity in the game. Each object in
+// the game (such as a ball, paddle, or brick) will need
+// a similar state description provided by this class.
 class GameObject
 {
 public:
-    // object state
-    glm::vec2   Position, Size, Velocity;
-    glm::vec3   Color;
-    float       Rotation;
-    bool        IsSolid;
-    bool        Destroyed;
-    // render state
+    // Object state variables
+    glm::vec2   Position;  // Position of the object in 2D space
+    glm::vec2   Size;      // Size of the object (width and height)
+    glm::vec2   Velocity;  // Velocity of the object (movement per frame)
+    glm::vec3   Color;     // RGB color of the object (default is white)
+    float       Rotation;  // Rotation angle of the object (in degrees)
+    bool        IsSolid;   // Whether the object is can be destroyed or not
+    bool        Destroyed; // Whether the object has been destroyed (used for game logic)
+
+    // Texture (sprite) used to render the object
     Texture2D   Sprite;
-    // constructor(s)
+
+    // Constructors
     GameObject();
     GameObject(glm::vec2 pos, glm::vec2 size, Texture2D sprite, glm::vec3 color = glm::vec3(1.0f), glm::vec2 velocity = glm::vec2(0.0f, 0.0f));
-    // draw sprite
+
+    // Draw the sprite on the screen using the provided renderer
+    // Parameters:
+    // - renderer: The SpriteRenderer object used to draw the sprite.
     virtual void Draw(SpriteRenderer& renderer);
 };
 
