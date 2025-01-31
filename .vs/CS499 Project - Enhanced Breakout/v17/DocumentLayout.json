@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Breakout.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\Breakout.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Game.cpp",
+              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Game.cpp",
+              "RelativeDocumentMoniker": "Enhanced Breakout\\Game.cpp",
+              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Game.cpp",
+              "RelativeToolTip": "Enhanced Breakout\\Game.cpp",
+              "ViewState": "AQIAAOcAAAAAAAAAAAAAAAYBAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-31T15:43:57.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Breakout.cpp",
+              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Breakout.cpp",
+              "RelativeDocumentMoniker": "Enhanced Breakout\\Breakout.cpp",
+              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Breakout.cpp",
+              "RelativeToolTip": "Enhanced Breakout\\Breakout.cpp",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAAAGYAAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-01-30T22:00:38.876Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

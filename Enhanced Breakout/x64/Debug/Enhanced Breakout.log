@@ -1,9 +1,7 @@
-﻿  BallObject.cpp
-  Breakout.cpp
-  Game.cpp
-  GameLevel.cpp
-  GameObject.cpp
-  ParticleGenerator.cpp
-  ResourceManager.cpp
-  Generating Code...
-  Enhanced Breakout.vcxproj -> C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\x64\Debug\CS499 Project - Enhanced Breakout.exe
+﻿  Breakout.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: 'APIENTRY': macro redefinition
+  (compiling source file 'Breakout.cpp')
+  C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\include\glad\glad.h(32,1):
+  see previous definition of 'APIENTRY'
+  
+  Enhanced Breakout.vcxproj -> C:\Users\jjs00\Documents\GitHub\CapstoneProject\x64\Debug\CS499 Project - Enhanced Breakout.exe

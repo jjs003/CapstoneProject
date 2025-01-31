@@ -25,9 +25,10 @@
 
 // Represents the current state of the game.
 enum GameState {
-    GAME_ACTIVE, // The game is actively being played.
-    GAME_MENU,   // The game is displaying the menu screen.
-    GAME_WIN     // The player has won the game.
+    GAME_ACTIVE,  // The game is actively being played.
+    GAME_MENU,    // The game is displaying the menu screen.
+    GAME_WIN,     // The player has won the game.
+    GAME_OVER     // The player ran out of lives.
 };
 
 // Represents the four possible (collision) directions
@@ -56,7 +57,7 @@ const glm::vec2 PLAYER_SIZE(100.0f, 20.0f);
 const float PLAYER_VELOCITY(500.0f);
 
 // Initial velocity of the ball
-const glm::vec2 INITIAL_BALL_VELOCITY(100.0f, -350.0f);
+const glm::vec2 INITIAL_BALL_VELOCITY(0.0f, -500.0f);
 
 // Radius of the ball object
 const float BALL_RADIUS = 12.5f;
@@ -69,11 +70,13 @@ class Game
 {
 public:
     // --- Game State ---
-    GameState               State;          // Current state of the game.
-    bool                    Keys[1024];     // Stores the state of each key (pressed/released).
-    unsigned int            Width, Height;  // Dimensions of the game window.
-    std::vector<GameLevel>  Levels;         // Stores all game levels.
-    unsigned int            Level;          // Current game level index.
+    GameState               State;                // Current state of the game.
+    bool                    Keys[1024];           // Stores the state of each key (pressed/released).
+    bool                    KeysProcessed[1024];  // Keeps track of key presses that have been processed
+    unsigned int            Width, Height;        // Dimensions of the game window.
+    std::vector<GameLevel>  Levels;               // Stores all game levels.
+    unsigned int            Level;                // Current game level index.
+    unsigned int            Lives;                // Keeps track of the player's lives
 
     // --- Constructor/Destructor ---
     Game(unsigned int width, unsigned int height);  // Initializes game with the specified dimensions.
