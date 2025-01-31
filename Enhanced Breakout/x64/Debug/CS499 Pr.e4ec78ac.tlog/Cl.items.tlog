@@ -1,11 +1,12 @@
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\BallObject.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\BallObject.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\Breakout.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\Breakout.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\Game.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\Game.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\GameLevel.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\GameLevel.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\GameObject.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\GameObject.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\glad.c;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\glad.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\ResourceManager.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\ResourceManager.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\Shader.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\Shader.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\ParticleGenerator.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\ParticleGenerator.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\SpriteRenderer.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\SpriteRenderer.obj
-C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\Texture.cpp;C:\Users\jjs00\Desktop\CS499 Project - Enhanced Breakout\Enhanced Breakout\x64\Debug\Texture.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\BallObject.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\BallObject.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Breakout.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\Breakout.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Game.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\Game.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\GameLevel.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\GameLevel.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\GameObject.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\GameObject.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\glad.c;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\glad.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\ResourceManager.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\ResourceManager.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Shader.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\Shader.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\ParticleGenerator.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\ParticleGenerator.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\SpriteRenderer.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\SpriteRenderer.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\TextRenderer.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\TextRenderer.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Texture.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Debug\Texture.obj

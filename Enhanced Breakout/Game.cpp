@@ -12,6 +12,10 @@
 ******************************************************************/
 
 
+#include <algorithm>
+#include <sstream>
+#include <iostream>
+
 #include "game.h"
 #include "resource_manager.h"
 #include "sprite_renderer.h"
@@ -19,6 +23,7 @@
 #include "ball_object.h"
 #include "particle_generator.h"
 #include <iostream>
+#include "text_renderer.h"
 
 // --- Global Variables ---
 // Game-related render objects
@@ -26,11 +31,12 @@ SpriteRenderer* Renderer;
 GameObject* Player;
 BallObject* Ball;
 ParticleGenerator* Particles;
+TextRenderer* Text;
 
 // --- Game Class Implementation ---
 
 Game::Game(unsigned int width, unsigned int height)
-    : State(GAME_ACTIVE), Keys(), Width(width), Height(height), Level(0)
+    : State(GAME_MENU), Keys(), KeysProcessed(), Width(width), Height(height), Level(0), Lives(3)
 {
 
 }
@@ -41,6 +47,7 @@ Game::~Game()
     delete Player;
     delete Ball;
     delete Particles;
+    delete Text;
 }
 
 void Game::Init()
@@ -58,26 +65,36 @@ void Game::Init()
     ResourceManager::GetShader("particle").SetMatrix4("projection", projection);
 
     // --- Load Textures ---
-    ResourceManager::LoadTexture("../textures/hot_ball2.png", true, "face");
+    ResourceManager::LoadTexture("../textures/teal_ball.png", true, "face");
     ResourceManager::LoadTexture("../textures/background.jpg", false, "background");
     ResourceManager::LoadTexture("../textures/block.png", false, "block");
     ResourceManager::LoadTexture("../textures/block_solid.png", false, "block_solid");
     ResourceManager::LoadTexture("../textures/paddle.png", true, "paddle");
-    ResourceManager::LoadTexture("../textures/red-particle-triangle2.png", true, "particle");
+    ResourceManager::LoadTexture("../textures/teal-particle.png", true, "particle");
 
     // --- Initialize Renderers ---
     Renderer = new SpriteRenderer(ResourceManager::GetShader("sprite"));
     Particles = new ParticleGenerator(ResourceManager::GetShader("particle"), ResourceManager::GetTexture("particle"), 750);
+    Text = new TextRenderer(this->Width, this->Height);
+
+    // Load font
+    Text->Load("../fonts/ARJULIAN.TTF", 24);
 
     // --- Load Levels ---
     GameLevel one; one.Load("../levels/1.lvl", this->Width, this->Height / 2);
     GameLevel two; two.Load("../levels/2.lvl", this->Width, this->Height / 2);
     GameLevel three; three.Load("../levels/3.lvl", this->Width, this->Height / 2);
     GameLevel four; four.Load("../levels/4.lvl", this->Width, this->Height / 2);
+    GameLevel five; five.Load("../levels/5.lvl", this->Width, this->Height / 2);
+    GameLevel six; six.Load("../levels/6.lvl", this->Width, this->Height / 2);
+
     this->Levels.push_back(one);
     this->Levels.push_back(two);
     this->Levels.push_back(three);
     this->Levels.push_back(four);
+    this->Levels.push_back(five);
+    this->Levels.push_back(six);
+
 
     // --- Configure Game Objects ---
     glm::vec2 playerPos = glm::vec2(this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, this->Height - PLAYER_SIZE.y);
@@ -95,19 +112,71 @@ void Game::Update(float dt)
     // Check loss condition (ball fell below screen)
     if (Ball->Position.y >= this->Height) // did ball reach the bottom edge?
     {
-        this->ResetLevel();
+        // Player loses a life
+        --this->Lives;
+
+        // Has the player lost (Lives = 0)?
+        if (this->Lives == 0)
+        {
+            this->State = GAME_OVER;
+        }
         this->ResetPlayer();
+    }
+
+    // Check if the player has won
+    if (this->State == GAME_ACTIVE && this->Levels[this->Level].IsCompleted())
+    {
+        this->ResetPlayer();
+        this->State = GAME_WIN;
     }
 }
 
 const void Game::ProcessInput(float dt)
 {
+    if (this->State == GAME_MENU)
+    {
+        if (this->Keys[GLFW_KEY_ENTER] && !this->KeysProcessed[GLFW_KEY_ENTER])
+        {
+            this->State = GAME_ACTIVE;
+            this->KeysProcessed[GLFW_KEY_ENTER] = true;
+        }
+        if (this->Keys[GLFW_KEY_W] && !this->KeysProcessed[GLFW_KEY_W])
+        {
+            this->Level = (this->Level + 1) % 6;
+            this->KeysProcessed[GLFW_KEY_W] = true;
+        }
+        if (this->Keys[GLFW_KEY_S] && !this->KeysProcessed[GLFW_KEY_S])
+        {
+            if (this->Level > 0)
+            {
+                --this->Level;
+            }
+            else
+            {
+                this->Level = 5;
+            }
+            this->KeysProcessed[GLFW_KEY_S] = true;
+        }
+    }
+
+    if (this->State == GAME_WIN || this->State == GAME_OVER)
+    {
+        if (this->Keys[GLFW_KEY_ENTER])
+        {
+            this->KeysProcessed[GLFW_KEY_ENTER] = true;
+            this->ResetLevel();
+            this->State = GAME_MENU;
+        }
+    }
+
     if (this->State == GAME_ACTIVE)
     {
         float velocity = PLAYER_VELOCITY * dt;
+
         // Move player paddle
         if (this->Keys[GLFW_KEY_LEFT] || this->Keys[GLFW_KEY_A])
         {
+            Player->Velocity.x = -PLAYER_VELOCITY;
             if (Player->Position.x - 1 >= 0.0f)
             {
                 Player->Position.x -= velocity;
@@ -115,8 +184,9 @@ const void Game::ProcessInput(float dt)
                     Ball->Position.x -= velocity;
             }
         }
-        if (this->Keys[GLFW_KEY_RIGHT] || this->Keys[GLFW_KEY_D])
+        else if (this->Keys[GLFW_KEY_RIGHT] || this->Keys[GLFW_KEY_D])
         {
+            Player->Velocity.x = PLAYER_VELOCITY;
             if (Player->Position.x <= this->Width - Player->Size.x - 1)
             {
                 Player->Position.x += velocity;
@@ -124,22 +194,76 @@ const void Game::ProcessInput(float dt)
                     Ball->Position.x += velocity;
             }
         }
+        else
+        {
+            Player->Velocity.x = 0.0f;
+        }
+
         if (this->Keys[GLFW_KEY_SPACE])
-            Ball->Stuck = false;  // Release the ball from the paddle
+        {
+            if (Ball->Stuck == true)
+            {
+                // Add a portion of the paddle's x velocity to the ball's x velocity
+                glm::vec2 oldVelocity = Ball->Velocity;
+                Ball->Velocity.x = Player->Velocity.x * 0.5f;
+
+                // Normalize and maintain the ball's speed.
+                float ballSpeed = glm::length(oldVelocity);
+                Ball->Velocity = glm::normalize(Ball->Velocity) * ballSpeed;
+
+                // Release the ball from the paddle
+                Ball->Stuck = false;
+            }
+        }
     }
 }
 
 void Game::Render()
 {
-    if (this->State == GAME_ACTIVE)
+    if (this->State == GAME_ACTIVE || this->State == GAME_MENU || this->State == GAME_WIN)
     {
-        // draw background
+        // Draw background
         Renderer->DrawSprite(ResourceManager::GetTexture("background"), 
                              glm::vec2(0.0f, 0.0f), glm::vec2(this->Width, this->Height), 0.0f);
-        this->Levels[this->Level].Draw(*Renderer);  // Draw current level
-        Player->Draw(*Renderer);                    // Draw player paddle
-        Particles->Draw();                          // Draw particle effects
-        Ball->Draw(*Renderer);                      // Draw the ball
+
+        // Draw current level
+        this->Levels[this->Level].Draw(*Renderer);  
+
+        // Draw player paddle
+        Player->Draw(*Renderer);
+
+        // Draw particle effects while ball is in motion
+        if ((Ball->Stuck && Player->Velocity.x != 0) || !Ball->Stuck)
+        Particles->Draw();
+
+        // Draw the ball
+        Ball->Draw(*Renderer);
+
+        // Render text
+        std::stringstream ss;
+        ss << this->Lives;
+        Text->RenderText("Lives: " + ss.str(), 5.0f, 5.0f, 1.0f, glm::vec3(1.0f, 0.9f, 0.9f));
+    }
+
+    if (this->State == GAME_MENU)
+    {
+        Text->RenderText("Press ENTER to start", 280.0f, this->Height / 2.0f + 20.0f, 1.0f);
+        Text->RenderText("Press W or S to select level", 280.0f, this->Height / 2.0f + 45.0f, 0.75f);
+        Text->RenderText("Once the game begins, use spacebar to release the ball", 170.0f, this->Height / 2.0f + 85.0f, 0.75, glm::vec3(1.0f, 0.8f, 0.3f));
+        Text->RenderText("Move the paddle left with the 'A' key/left arrow and right with the 'D' key/right arrow", 20.0f, this->Height / 2.0f +105.0f, 0.75, glm::vec3(1.0f, 0.8f, 0.3f));
+        Text->RenderText("Clear all breakable bricks to complete each level!", 190.0f, this->Height / 2.0f +125.0f, 0.75, glm::vec3(1.0f, 0.8f, 0.3f));
+    }
+
+    if (this->State == GAME_WIN)
+    {
+        Text->RenderText("YOU WON!", 310.0f, this->Height / 2.0f + 25.0f, 1.5f, glm::vec3(0.1f, 0.9f, 0.2f));
+        Text->RenderText("Press ENTER to return to the level select screen or ESC to quit", 35.0f, this->Height / 2.0f + 75.0f, 1.0f);
+    }
+
+    if (this->State == GAME_OVER)
+    {
+        Text->RenderText("OH NO! You ran out of Lives!", 235.0f, this->Height / 2.0f + 40.0f, 1.0f, glm::vec3(0.9f, 0.1f, 0.1f));
+        Text->RenderText("Press ENTER to return to the level select screen or ESC to quit", 30.0f, this->Height / 2.0f + 80.0f, 1.0f, glm::vec3(1.0f, 1.0f, 0.0f));
     }
 }
 
@@ -190,12 +314,15 @@ void Game::ResetLevel()
 {
     std::string fileName = "../levels/" + std::to_string(this->Level + 1) + ".lvl";
     this->Levels[this->Level].Load(fileName, this->Width, this->Height / 2);
+
+    this->Lives = 3;
 }
 
 // Resets the player and ball
 void Game::ResetPlayer()
 {
     Player->Size = PLAYER_SIZE;
+    Player->Velocity.x = 0.0f;
     Player->Position = glm::vec2(this->Width / 2.0f - PLAYER_SIZE.x / 2.0f, this->Height - PLAYER_SIZE.y);
     Ball->Reset(Player->Position + glm::vec2(PLAYER_SIZE.x / 2.0f - BALL_RADIUS, -(BALL_RADIUS * 2.0f)), INITIAL_BALL_VELOCITY);
 }
@@ -318,13 +445,19 @@ void ResolvePaddleCollision(const Collision& collision)
     float distance = (ball.Position.x + ball.Radius) - centerBoard;
     float percentage = distance / (paddle.Size.x / 2.0f);
 
-    // Calculate new ball velocity after collision
-    float strength = 2.0f;
-    glm::vec2 oldVelocity = ball.Velocity;
-    ball.Velocity.x = INITIAL_BALL_VELOCITY.x * percentage * strength;
-    ball.Velocity = glm::normalize(ball.Velocity) * glm::length(oldVelocity);
+    // Calculate the paddle's influence on the ball's x velocity.
+    float paddleInfluence = paddle.Velocity.x * 0.25f;
 
-    // Adjust for sticky paddle
+    // Calculate the new x velocity
+    float strength = 0.5f;
+    glm::vec2 oldVelocity = ball.Velocity;
+    ball.Velocity.x = (glm::length(ball.Velocity) * percentage * strength) + paddleInfluence;
+
+    // Normalize and maintain the ball's speed.
+    float ballSpeed = glm::length(oldVelocity);
+    ball.Velocity = glm::normalize(ball.Velocity) * ballSpeed;
+
+    // Adjust for sticky paddle.
     ball.Velocity.y = -std::abs(ball.Velocity.y);
 }
 

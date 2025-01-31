@@ -19,6 +19,7 @@
 #include "resource_manager.h"
 
 #include <iostream>
+#include <chrono>
 
 // --- Constants ---
 const unsigned int SCREEN_WIDTH = 800;  // Width of the application window.
@@ -83,6 +84,9 @@ int main(int argc, char* argv[])
     // Main game loop (frame).
     while (!glfwWindowShouldClose(window))
     {
+        // Code for troubleshooting frame issues
+        /*auto start_time = std::chrono::high_resolution_clock::now();*/
+
         // Calculate delta time (time elapsed between frames).
         float currentFrame = static_cast<float>(glfwGetTime());
         deltaTime = currentFrame - lastFrame;
@@ -102,6 +106,14 @@ int main(int argc, char* argv[])
 
         // Swap the front and back buffers.
         glfwSwapBuffers(window);
+
+        // Code for troubleshooting frame issues
+        /*auto end_time = std::chrono::high_resolution_clock::now();
+        std::chrono::duration<float> duration = end_time - start_time;
+
+        if (duration.count() > 0.10) {
+            std::cout << "Frame time: " << duration.count() << " seconds" << std::endl;
+        }*/
     }
 
     // Clean up resources.
@@ -137,6 +149,7 @@ void key_callback(GLFWwindow* window, int key, int scancode, int action, int mod
         else if (action == GLFW_RELEASE)
         {
             Breakout.Keys[key] = false;
+            Breakout.KeysProcessed[key] = false;
         }
     }
 }
