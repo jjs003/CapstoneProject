@@ -68,6 +68,9 @@ int main(int argc, char* argv[])
     // Register callback functions.
     glfwSetKeyCallback(window, key_callback);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
+    glfwSetCharCallback(window, [](GLFWwindow*, unsigned int codepoint) {
+        Breakout.ProcessCharInput(static_cast<char>(codepoint));
+        });
 
     // Configure OpenGL settings.
     glViewport(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT);

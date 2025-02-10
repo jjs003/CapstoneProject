@@ -18,6 +18,8 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 
+#include <chrono>
+
 #include "game_level.h"
 
 
@@ -25,10 +27,12 @@
 
 // Represents the current state of the game.
 enum GameState {
-    GAME_ACTIVE,  // The game is actively being played.
-    GAME_MENU,    // The game is displaying the menu screen.
-    GAME_WIN,     // The player has won the game.
-    GAME_OVER     // The player ran out of lives.
+    GAME_ACTIVE,         // The game is actively being played.
+    GAME_MENU,           // The game is displaying the menu screen.
+    GAME_WIN,            // The player has won the game.
+    GAME_OVER,           // The player ran out of lives.
+    HIGH_SCORE,          // Player has obtained a high score
+    HIGH_SCORE_DISPLAY   // Screen that displays the high scores for a level
 };
 
 // Represents the four possible (collision) directions
@@ -68,6 +72,11 @@ const float BALL_RADIUS = 12.5f;
 // It combines all game-related data into a single, manageable class.
 class Game
 {
+private:
+    std::chrono::high_resolution_clock::time_point levelStartTime;   // Clock for tracking level start time
+    float levelCompletionTime = 0;                                       // Time duration for level completion
+    std::string playerName = "";                                          // String for capturing player name
+
 public:
     // --- Game State ---
     GameState               State;                // Current state of the game.
@@ -78,6 +87,7 @@ public:
     unsigned int            Level;                // Current game level index.
     unsigned int            Lives;                // Keeps track of the player's lives
 
+
     // --- Constructor/Destructor ---
     Game(unsigned int width, unsigned int height);  // Initializes game with the specified dimensions.
     ~Game();  // Destructor for cleaning up resources.
@@ -87,8 +97,11 @@ public:
     // Initializes game state, including loading shaders, textures, and levels.
     void Init();
 
+    // Process input for inputting a username
+    void ProcessCharInput(char c);
+
     // Processes user input based on the time elapsed (delta time).
-    const void ProcessInput(float dt);
+    void ProcessInput(float dt);
 
     // Updates the game state based on the time elapsed between frames (delta time).
     void Update(float dt);
@@ -105,7 +118,16 @@ public:
     void ResetLevel();
 
     // Resets the player's position and state to its initial configuration.
-    void ResetPlayer();
+    void ResetPlayer() const;
+
+    // Begins timer for recording level completion time
+    void StartLevelTimer();
+
+    // Stops timer for recording level completion time
+    void StopLevelTimer();
+
+    // Returns the total time for level completion
+    float GetLevelCompletionTime() const;
 };
 
 #endif  // GAME_H

@@ -20,10 +20,10 @@
 
 // Holds all state information relevant to a character as loaded using FreeType
 struct Character {
-	unsigned int TextureID;  // ID handle of the glyph texture
-	glm::ivec2   Size;       // Size of the glyph
-	glm::ivec2   Bearing;    // Offset from baseline to the left/top of the glyph
-	unsigned int Advance;    // The horizontal offset to advance to the next glyph
+	unsigned int TextureID = 0;  // ID handle of the glyph texture
+	glm::ivec2   Size;           // Size of the glyph
+	glm::ivec2   Bearing;        // Offset from baseline to the left/top of the glyph
+	unsigned int Advance = 0;    // The horizontal offset to advance to the next glyph
 };
 
 
@@ -47,6 +47,13 @@ public:
 
 	// Renders a string of text using the pre-compiled list of characters
 	void RenderText(const std::string& text, float x, float y, float scale, glm::vec3 color = glm::vec3(1.0f));
+
+	// Determines the text width for a string for use in centering text
+	float GetTextWidth(const std::string& text, float scale);
+
+	// Creates a horizontally centered rendering for text
+	void RenderCenteredText(const std::string& text, float y, int width, float scale, glm::vec3 color = glm::vec3(1.0f));
+
 
 private:
 	// Render state

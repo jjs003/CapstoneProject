@@ -7,8 +7,20 @@
       "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\Game.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Breakout.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\Breakout.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\TextRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\TextRenderer.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\HighScoreDB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\HighScoreDB.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\high_score_DB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\high_score_DB.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{E4EC78AC-0720-4CE2-81A1-58355757EE5C}|Enhanced Breakout\\Enhanced Breakout.vcxproj|solutionrelative:Enhanced Breakout\\game.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,8 +30,58 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "game.h",
+              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\game.h",
+              "RelativeDocumentMoniker": "Enhanced Breakout\\game.h",
+              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\game.h",
+              "RelativeToolTip": "Enhanced Breakout\\game.h",
+              "ViewState": "AQIAADYAAAAAAAAAAAAAAFIAAABlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-03T15:45:58.053Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "TextRenderer.cpp",
+              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\TextRenderer.cpp",
+              "RelativeDocumentMoniker": "Enhanced Breakout\\TextRenderer.cpp",
+              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\TextRenderer.cpp",
+              "RelativeToolTip": "Enhanced Breakout\\TextRenderer.cpp",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAB4AAAAhAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-06T16:44:36.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HighScoreDB.cpp",
+              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\HighScoreDB.cpp",
+              "RelativeDocumentMoniker": "Enhanced Breakout\\HighScoreDB.cpp",
+              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\HighScoreDB.cpp",
+              "RelativeToolTip": "Enhanced Breakout\\HighScoreDB.cpp",
+              "ViewState": "AQIAAF0AAAAAAAAAAAAAAJ4AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-02-05T04:22:04.487Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "high_score_DB.h",
+              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\high_score_DB.h",
+              "RelativeDocumentMoniker": "Enhanced Breakout\\high_score_DB.h",
+              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\high_score_DB.h",
+              "RelativeToolTip": "Enhanced Breakout\\high_score_DB.h",
+              "ViewState": "AQIAABgAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2025-02-05T04:21:51.556Z"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -28,22 +90,9 @@
               "RelativeDocumentMoniker": "Enhanced Breakout\\Game.cpp",
               "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Game.cpp",
               "RelativeToolTip": "Enhanced Breakout\\Game.cpp",
-              "ViewState": "AQIAAOcAAAAAAAAAAAAAAAYBAAAhAAAA",
+              "ViewState": "AQIAAKMCAAAAAAAAAAAAAD4BAAB5AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-01-31T15:43:57.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Breakout.cpp",
-              "DocumentMoniker": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Breakout.cpp",
-              "RelativeDocumentMoniker": "Enhanced Breakout\\Breakout.cpp",
-              "ToolTip": "C:\\Users\\jjs00\\Documents\\GitHub\\CapstoneProject\\Enhanced Breakout\\Breakout.cpp",
-              "RelativeToolTip": "Enhanced Breakout\\Breakout.cpp",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAAAGYAAABQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-01-30T22:00:38.876Z",
               "EditorCaption": ""
             }
           ]
