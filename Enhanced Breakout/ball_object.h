@@ -24,19 +24,22 @@
 class BallObject : public GameObject
 {
 public:
-	// Ball properties
-	float Radius;  // Radius of the ball
-	bool Stuck;    // Flag indicating if the ball is stuck to the paddle
+	// Ball properties.
+	float Radius;  // The radius of the ball, which influences its collision detection.
+	bool Stuck;    // Flag indicating if the ball is stuck to the paddle.
 
-	// Constructors
-	BallObject();  // Default constructor
-	BallObject(glm::vec2 pos, float radius, glm::vec2 velocity, Texture2D sprite);  // Parameterized constructor
+	// Default constructor: Initializes the ball with default values.
+	BallObject();
 
-	// Moves the ball, ensuring it stays within the window bounds (except the bottom edge).
-	// Returns the updated position of the ball.
+	// Parameterized constructor: Initializes the ball with a specific position, radius, velocity, and texture.
+	BallObject(glm::vec2 pos, float radius, glm::vec2 velocity, Texture2D sprite);
+
+	// Moves the ball based on its velocity and the time delta, ensuring it stays within the window bounds.
+	// If the ball hits the top or side, it bounces back. The updated position is returned.
 	glm::vec2 Move(float dt, unsigned int window_width);
 
-	// Resets the ball to its initial state, with the given position and velocity.
+	// Resets the ball to its initial state by setting the given position and velocity.
+	// This is typically used when the ball is lost, and the game needs to reset.
 	void Reset(glm::vec2 position, glm::vec2 velocity);
 };
 

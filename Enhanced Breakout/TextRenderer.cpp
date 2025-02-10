@@ -16,15 +16,16 @@
 #include "text_renderer.h"
 #include "resource_manager.h"
 
-
+// Constructor: Initializes the text renderer with a screen width and height.
 TextRenderer::TextRenderer(unsigned int width, unsigned int height)
 {
-	// Load and configure the text renderer shader
+	// Load and configure the text renderer shader for 2D rendering.
 	this->TextShader = ResourceManager::LoadShader("../shaders/text_2d.vs", "../shaders/text_2d.fs", nullptr, "text");
 	this->TextShader.SetMatrix4("projection", glm::ortho(0.0f, static_cast<float>(width), static_cast<float>(height), 0.0f), true);
 	this->TextShader.SetInteger("text", 0);
 
-	// Configure VAO/VBO for texture quads
+    // Configure the Vertex Array Object (VAO) and Vertex Buffer Object (VBO) for rendering texture quads.
+    glGenVertexArrays(1, &this->VAO);
     glGenVertexArrays(1, &this->VAO);
     glGenBuffers(1, &this->VBO);
     glBindVertexArray(this->VAO);
@@ -35,9 +36,10 @@ TextRenderer::TextRenderer(unsigned int width, unsigned int height)
     glBindVertexArray(0);
 }
 
+// Loads a font and generates textures for each character.
 void TextRenderer::Load(const std::string& font, unsigned int fontSize)
 {
-    // Clear previously loaded characters
+    // Clear previously loaded characters.
     this->Characters.clear();
 
     // Initialize and load FreeType library
@@ -48,7 +50,7 @@ void TextRenderer::Load(const std::string& font, unsigned int fontSize)
         return;
     }
 
-    // Load chosen font as a 'face'
+    // Load the font face from the specified file.
     FT_Face face;
     if (FT_New_Face(ft, font.c_str(), 0, &face))
     {
@@ -57,23 +59,23 @@ void TextRenderer::Load(const std::string& font, unsigned int fontSize)
         return;
     }
 
-    // Set the font size
+    // Set the font size for rendering.
     FT_Set_Pixel_Sizes(face, 0, fontSize);
 
-    // Disable byte-alignment restriction
+    // Disable byte-alignment restriction to ensure correct texture data.
     glPixelStorei(GL_UNPACK_ALIGNMENT, 1);
 
-    // Load the first 128 ASCII characters
+    // Load the first 128 ASCII characters and create a texture for each one.
     for (GLubyte c = 0; c < 128; ++c)
     {
-        // Load character glyph
+        // Load character glyph.
         if (FT_Load_Char(face, c, FT_LOAD_RENDER))
         {
             std::cerr << "ERROR::FREETYPE: Failed to load glyph for character: " << c << std::endl;
             continue;
         }
 
-        // Generate texture
+        // Generate a texture for the character.
         unsigned int texture;
         glGenTextures(1, &texture);
         glBindTexture(GL_TEXTURE_2D, texture);
@@ -89,13 +91,13 @@ void TextRenderer::Load(const std::string& font, unsigned int fontSize)
             face->glyph->bitmap.buffer
         );
 
-        // Set texture options
+        // Set texture parameters for wrapping and filtering.
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_CLAMP_TO_EDGE);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
         glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
 
-        // Store character for later use
+        // Store the character information for future rendering.
         Character character = {
             texture,
             glm::ivec2(face->glyph->bitmap.width, face->glyph->bitmap.rows),
@@ -107,23 +109,24 @@ void TextRenderer::Load(const std::string& font, unsigned int fontSize)
 
     glBindTexture(GL_TEXTURE_2D, 0);
 
-    // Cleanup FreeType resources
+    // Clean up FreeType resources after loading the font.
     FT_Done_Face(face);
     FT_Done_FreeType(ft);
 }
 
+// Renders text at a specified position, scale, and color.
 void TextRenderer::RenderText(const std::string& text, float x, float y, float scale, glm::vec3 color) 
 {
-    // Activate shader and set color
+    // Activate the shader program and set the text color.
     this->TextShader.Use();
     this->TextShader.SetVector3f("textColor", color);
     glActiveTexture(GL_TEXTURE0);
     glBindVertexArray(this->VAO);
 
-    // Iterate through characters
+    // Loop through each character in the text string.
     for (char c : text)
     {
-        // Skip missing characters
+        // Skip characters that aren't available.
         if (Characters.find(c) == Characters.end())
         {
             continue;
@@ -131,13 +134,13 @@ void TextRenderer::RenderText(const std::string& text, float x, float y, float s
 
         Character ch = Characters[c];
 
+        // Calculate the position and size of the character quad.
         float xpos = x + ch.Bearing.x * scale;
         float ypos = y + (this->Characters['H'].Bearing.y - ch.Bearing.y) * scale;
-
         float w = ch.Size.x * scale;
         float h = ch.Size.y * scale;
 
-        // Vertex data for the character quad
+        // Define the vertices for the character quad.
         float vertices[6][4] = {
             { xpos,     ypos + h,  0.0f, 1.0f },
             { xpos + w, ypos,      1.0f, 0.0f },
@@ -148,20 +151,47 @@ void TextRenderer::RenderText(const std::string& text, float x, float y, float s
             { xpos + w, ypos,      1.0f, 0.0f }
         };
 
-        // Render glyph texture over quad
+        // Bind the texture for the character and update the VBO.
         glBindTexture(GL_TEXTURE_2D, ch.TextureID);
-
-        // Update content of VBO memory
         glBindBuffer(GL_ARRAY_BUFFER, this->VBO);
         glBufferSubData(GL_ARRAY_BUFFER, 0, sizeof(vertices), vertices);
 
-        // Render quad
+        // Render the quad.
         glDrawArrays(GL_TRIANGLES, 0, 6);
 
-        // Advance cursors for next glyph
-        x += (ch.Advance >> 6) * scale; // Bitshift by 6 converts 1/64th units to pixels.
+        // Advance the cursor to the next character.
+        x += (ch.Advance >> 6) * scale; // Convert to pixels.
     }
 
     glBindVertexArray(0);
     glBindTexture(GL_TEXTURE_2D, 0);
+}
+
+// Renders text centered on the screen at the given vertical position.
+void TextRenderer::RenderCenteredText(const std::string& text, float y, int width, float scale, glm::vec3 color)
+{
+    // Calculate the width of the text.
+    float textWidth = GetTextWidth(text, scale);
+
+    // Calculate the x position to center the text on the screen.
+    float screenWidth = static_cast<float>(width);
+    float xPos = (screenWidth - textWidth) / 2.0f;
+
+    // Render the text at the calculated position.
+    RenderText(text, xPos, y, scale, color);
+}
+
+// Calculates the width of a text string based on the current font and scale.
+float TextRenderer::GetTextWidth(const std::string& text, float scale) {
+    float width = 0.0f;
+
+    // Loop through each character and add its width to the total.
+    for (char c : text) {
+        if (Characters.find(c) != Characters.end()) {
+            Character ch = Characters[c];
+            width += (ch.Advance >> 6) * scale;  // Convert to pixels and apply scale.
+        }
+    }
+
+    return width;
 }

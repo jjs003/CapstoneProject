@@ -4,10 +4,12 @@ C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Game.cpp;C:\Us
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\GameLevel.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\GameLevel.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\GameObject.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\GameObject.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\glad.c;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\glad.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\HighScoreDB.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\HighScoreDB.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\ResourceManager.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\ResourceManager.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Shader.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\Shader.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\ParticleGenerator.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\ParticleGenerator.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\SpriteRenderer.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\SpriteRenderer.obj
+C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\sqlite3.c;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\sqlite3.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\stb_image.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\stb_image.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\TextRenderer.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\TextRenderer.obj
 C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\Texture.cpp;C:\Users\jjs00\Documents\GitHub\CapstoneProject\Enhanced Breakout\x64\Release\Texture.obj
