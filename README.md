@@ -1,2 +1,0 @@
-# SNHU CS 499 CAPSTONE PROJECT
- by: Jeremy Snow
