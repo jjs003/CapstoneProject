@@ -1,2 +1,2 @@
-# CapstoneProject
- Capstone Project for SNHU CS 499
+# SNHU CS 499 CAPSTONE PROJECT
+ by: Jeremy Snow
