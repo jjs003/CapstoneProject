@@ -1,0 +1,16 @@
+﻿  BallObject.cpp
+  Breakout.cpp
+  Game.cpp
+  GameLevel.cpp
+  GameObject.cpp
+  ResourceManager.cpp
+  Shader.cpp
+  ParticleGenerator.cpp
+  SpriteRenderer.cpp
+  Texture.cpp
+  glad.c
+  Generating code
+  Previous IPDB not found, fall back to full compilation.
+  All 1051 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Finished generating code
+  Enhanced Breakout.vcxproj -> C:\Users\jjs00\Downloads\Enhancement One\x64\Release\CS499 Project - Enhanced Breakout.exe

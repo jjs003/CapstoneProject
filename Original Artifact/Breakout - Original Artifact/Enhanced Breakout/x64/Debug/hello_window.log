@@ -1,0 +1,17 @@
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Microsoft\VC\v170\Microsoft.CppBuild.targets(531,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (hello_window.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  BallObject.cpp
+  Breakout.cpp
+C:\Users\jjs00\Documents\CS 499\Module One\CS499 Project - Enhanced Breakout\CS499 Project - Enhanced Breakout\hello_window\Breakout.cpp(74,28): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Game.cpp
+  GameLevel.cpp
+C:\Users\jjs00\Documents\CS 499\Module One\CS499 Project - Enhanced Breakout\CS499 Project - Enhanced Breakout\hello_window\GameLevel.cpp(58,25): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\jjs00\Documents\CS 499\Module One\CS499 Project - Enhanced Breakout\CS499 Project - Enhanced Breakout\hello_window\GameLevel.cpp(59,24): warning C4267: 'initializing': conversion from 'size_t' to 'unsigned int', possible loss of data
+C:\Users\jjs00\Documents\CS 499\Module One\CS499 Project - Enhanced Breakout\CS499 Project - Enhanced Breakout\hello_window\GameLevel.cpp(60,76): warning C4244: 'initializing': conversion from 'unsigned int' to 'float', possible loss of data
+  GameObject.cpp
+  ResourceManager.cpp
+  Shader.cpp
+  SpriteRenderer.cpp
+  Texture.cpp
+  Generating Code...
+  glad.c
+  hello_window.vcxproj -> C:\Users\jjs00\Documents\CS 499\Module One\CS499 Project - Enhanced Breakout\CS499 Project - Enhanced Breakout\x64\Debug\CS499 Project - Enhanced Breakout.exe
