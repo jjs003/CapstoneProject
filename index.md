@@ -57,3 +57,11 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 - High score tracking for individual levels utilizing an SQLite database
 
 These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios.
+
+### Code Review
+Code reviews play a crucial role in software development, ensuring that code is efficient, maintainable, and aligned with best practices. This section includes a video walkthrough of my code review, conducted before implementing any modifications or enhancements. Through this review, I evaluate the existing functionality of my C++ game, inspired by the classic brick-breaker game Breakout, and identify areas for improvement.
+
+A thorough code review helps catch potential issues early, improving code structure, readability, and efficiency. In my review, I analyze key aspects such as logic, security, and documentation. I highlight areas that need refinement, such as optimizing game mechanics, enhancing code organization, and improving the code comments in order to make the code more understandable for future developers. Below, you can find my initial code review for the Breakout artifact.
+
+
+https://github.com/jjs003/CapstoneProject/blob/main/assets/CodeReview.mp4
