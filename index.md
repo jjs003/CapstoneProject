@@ -63,4 +63,6 @@ Code reviews play a crucial role in software development, ensuring that code is 
 
 A thorough code review helps catch potential issues early, improving code structure, readability, and efficiency. In my review, I analyze key aspects such as logic, security, and documentation. I highlight areas that need refinement, such as optimizing game mechanics, enhancing code organization, and improving the code comments in order to make the code more understandable for future developers. Below, you can find my initial code review for the Breakout artifact.
 
-https://github.com/jjs003/CapstoneProject/blob/main/assets/CodeReview.mp4
+<video width="320" height="240" controls loop="" muted="" autoplay="">
+  <source src="https://github.com/jjs003/CapstoneProject/blob/main/assets/CodeReview.mp4">
+</video>
