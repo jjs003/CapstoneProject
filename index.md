@@ -1,4 +1,6 @@
-# Welcome to Jeremy Snow’s CS-499 Computer Science Capstone ePortfolio
+<h1 align="center"> Welcome to Jeremy Snow’s </h1>
+<h1 align="center"> CS-499 Computer Science Capstone ePortfolio </h1>
+
 
 Hello, my name is Jeremy Snow, and I appreciate you taking the time to review my ePortfolio. This ePortfolio represents the culmination of my dedication and hard work throughout my coursework at Southern New Hampshire University (SNHU). Its purpose is to showcase the skills and knowledge I have developed during my academic journey. This ePortfolio was created for the CS-499 Computer Science Capstone Course and is designed to display an artifact that has been enhanced in three different categories: Software Design and Engineering, Algorithms and Data Structures, and Databases.
 
