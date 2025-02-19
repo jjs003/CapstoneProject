@@ -1,0 +1,46 @@
+.toc {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 220px;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.toc h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.toc ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.toc li {
+    margin-bottom: 8px;
+}
+
+.toc a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.toc a:hover {
+    text-decoration: underline;
+}
+
+/* Ensure main content doesn't overlap */
+.main-content {
+    margin-left: 260px; /* Adjust this if necessary */
+}
+
+@media (max-width: 768px) {
+    .toc {
+        display: none;
+    }
+}
