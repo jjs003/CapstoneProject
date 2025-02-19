@@ -1,3 +1,19 @@
+<div class="toc">
+  <h2>Table of Contents</h2>
+  <ul>
+    <li><a href="#professional-self-assessment">Professional Self-Assessment</a></li>
+    <li><a href="#collaboration-and-teamwork">Collaboration and Teamwork</a></li>
+    <li><a href="#effective-communication-and-documentation">Effective Communication and Documentation</a></li>
+    <li><a href="#data-structures-and-algorithms">Data Structures and Algorithms</a></li>
+    <li><a href="#software-engineering-and-database-management">Software Engineering and Database Management</a></li>
+    <li><a href="#software-security-and-secure-coding">Software Security and Secure Coding</a></li>
+    <li><a href="#exploring-different-areas-of-computer-science">Exploring Different Areas of Computer Science</a></li>
+    <li><a href="#artifact-enhancement-overview-and-eportfolio-summary">Artifact Enhancement Overview</a></li>
+    <li><a href="#code-review">Code Review</a></li>
+    <li><a href="#capstone-course-outcomes">Capstone Course Outcomes</a></li>
+  </ul>
+</div>
+
 <h1 align="center"> Welcome to Jeremy Snow’s </h1>
 <h1 align="center"> CS-499 Computer Science Capstone ePortfolio </h1>
 
