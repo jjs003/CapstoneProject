@@ -84,7 +84,7 @@ Listed below are the outcomes that have been met through each enhancement, as we
 ## [Enhancement One](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne)
 
 <video width="640" height="360" controls>
-  <source src=https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementOne.mp4 type="video/mp4">
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementOne.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
 
