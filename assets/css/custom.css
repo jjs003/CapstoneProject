@@ -40,6 +40,10 @@
     margin-left: 260px; /* Adjust this if necessary */
 }
 
+.site-title {
+    white-space: nowrap;
+}
+
 @media (max-width: 768px) {
     .toc {
         display: none;
