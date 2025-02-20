@@ -144,3 +144,40 @@ To run this version of the game:
 3. Open the "Breakout - Enhancement Two" folder.
 4. Navigate to the "x64" folder.
 5. Run the .exe file inside.
+
+## [Enhancement Three](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementThree)
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartOne.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartTwo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+For Enhancement Three, the final improvement has been implemented in the Breakout game developed during the coursework for CS 330: Computational Graphics and Visualization. This enhancement expands upon the original basic version of Breakout by adding the ability to save high scores to a local SQLite database. Each level now has a dedicated high score leaderboard containing the top 10 fastest completion times, which can be accessed by pressing the ‘H’ key from the level select screen or after achieving a new high score. When a high score is recorded, players can enter a username, limited to 10 alphanumeric characters, to be added to the leaderboard. Additionally, the collision mechanics between the paddle and ball have been refined to provide a more realistic gameplay experience.
+
+In addition to the reasons outlined in my previous narratives, continuing to use Breakout for the final enhancement just seemed like the right choice. Adding a high score leaderboard to any game is a great way to incentivize engagement. Everyone wants to have a high score! Beyond the gameplay benefits, integrating a database and high score system into this project also provided a unique challenge that aligned with key course outcomes. This enhancement showcases my ability to design and implement persistent data storage using SQLite, reinforcing my proficiency in database integration, data retrieval, and performance optimization. Additionally, the process of refining the leaderboard system required me to apply principles of efficient querying and data management, further strengthening my expertise in backend development.
+
+With the completion of Enhancement Three, all previously outlined course outcomes for this stage were successfully met. By incorporating a local SQLite database to track high scores, I applied algorithmic principles and computer science practices to address the challenge of persistent data storage and retrieval (Course Outcome 3). I evaluated different storage methods and ultimately selected SQLite for its efficiency and ease of integration within the existing C++ codebase. Additionally, implementing SQL queries and database management within a game environment demonstrated my ability to utilize innovative tools and techniques in computing practices (Course Outcome 4).
+
+Security was another key focus of this enhancement. I implemented input validation to ensure that only properly formatted usernames were stored in the database, preventing potential errors or exploits (Course Outcome 5). The design of the high score leaderboards also required a clear and user-friendly interface for displaying rankings, aligning with the objective of delivering professional-quality visual communications in a gaming context (Course Outcome 2).
+
+Although I worked on this project independently, I applied decision-making strategies that mirrored those used in collaborative environments. I carefully considered various approaches to data storage, UI design, and input validation, making informed choices based on the perceived user experience and system efficiency (Course Outcome 1). This process required balancing different trade-offs while ensuring the enhancement provided meaningful value to the overall gameplay experience.
+
+During the process of Enhancement Three’s implementation, I gained a deeper understanding of database integration within game development, reinforcing my ability to design efficient data storage solutions. Before this course, my experience with SQLite was limited to a guided learning experience. Designing this solution from scratch required me to develop a deeper understanding of the tool, and after this enhancement, I feel much more confident in my skills. Among the three enhancements, this was the most complex and required a more incremental approach. 
+
+Along the way, I encountered several challenges that deepened my problem-solving abilities. One particularly frustrating issue stemmed from how I instantiated the database in the Game.cpp file. Initially, I created a local copy of the database inside the initialization method, causing it to go out of scope as soon as the method exited. After debugging, I resolved the issue by modifying the code to create a pointer stored in a global variable, ensuring persistent access throughout the program. Another challenge involved centering text horizontally on the screen for the high score display. To address this, I extended the TextRenderer class by implementing a method that renders strings horizontally centered at a given vertical position. Ultimately, this enhancement not only improved the Breakout game but also provided a valuable learning experience in software development. It strengthened my skills in database management, security, UI design, and algorithmic problem-solving, making it a strong artifact for my ePortfolio.
+
+### Try It Out For Yourself!
+The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementThree). 
+
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "EnhancementThree" folder.
+3. Open the "Breakout - Enhancement Three" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
