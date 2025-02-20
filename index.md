@@ -115,3 +115,32 @@ To run this version of the game:
 3. Open the "Breakout - Enhancement One" folder.
 4. Navigate to the "x64" folder.
 5. Run the .exe file inside.
+
+## [Enhancement Two](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementTwo)
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementTwo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+The artifact modified for Enhancement Two is the same program used for Enhancement One. The code for this artifact was initially developed as part of the CS 330: Computational Graphics and Visualization coursework. It started as a basic version of the game Breakout, where the player could press the spacebar to release the ball, move the paddle left and right using the 'A'/left arrow and 'D'/right arrow keys, and break bricks with the ball. While the original artifact had the core functionality to allow the player to break all the bricks, it lacked additional logic to indicate level completion. Furthermore, when the ball passed the bottom of the screen, the level simply restarted without any progression or consequences. Following the completion of Enhancement One, the artifact was improved by adding a particle trail behind the ball. Enhancement Two further expanded the gameplay by introducing new features, such as a ‘lives’ counter, a level selection menu, and game-over/you-win screens.
+
+I chose the Breakout game code as the artifact for this enhancement for several reasons. First, I thoroughly enjoyed working on this project during the CS 330 coursework, and I saw an opportunity to expand upon its barebones state by adding meaningful functionality. Additionally, I have a passion for creating experiences that others can enjoy, and game design is a field that I am actively considering as a potential career path. This project also provided a stable foundation for implementing enhancements that showcase key software development skills while aligning closely with the course outcomes for the Capstone Course.
+
+Throughout the implementation of this enhancement, my skills in algorithms and data structures are clearly demonstrated. The creation of the level selection menu showcases my ability to develop computing solutions that address specific problems using established computer science and algorithmic principles, while effectively managing trade-offs in system design (Course Outcome 3). In addition, the development of the TextRenderer class, the integration of shaders, and the utilization of the FreeType library demonstrate my proficiency with advanced graphics programming techniques and innovative tools. These efforts culminated in a polished and professional-quality user experience, aligning with Course Outcome 4. Lastly, the addition of the game menu and other on-screen communications showcases my capability to design, develop and deliver content that is coherent, technically sound, and tailored to the needs of the intended audience (Course Outcome 2). 
+
+With the completion of Enhancement Two, the Breakout artifact became significantly more appealing to users, offering a more dynamic and enjoyable gameplay experience. Players gained the ability to select from six unique levels, take advantage of multiple attempts to complete a stage, and experience more engaging in-game communications. This enhancement successfully fulfilled the intended course outcomes for this stage. My plans for outcome coverage remained unchanged, and I proceeded as planned with the final enhancement.
+
+Developing this enhancement was more complex than Enhancement One and provided valuable learning experiences. Integrating the FreeType library into my solution required a solid understanding of its fundamentals, which involved carefully reviewing documentation to ensure proper implementation. After completing the initial code for FreeType, I encountered an issue that left me stumped for several hours. Since I had never worked with FreeType before, I initially assumed there was a setup error. However, the actual problem turned out to be a simple omission: I had forgotten to bind the texture in OpenGL when loading each glyph. As a result, no errors were thrown, but no text appeared on the screen either. Once I resolved this issue and successfully rendered text, I focused on refining the layout, colors, and wording of the game screens. The process was both challenging and rewarding, and I am very pleased with the final result.
+
+
+### Try It Out For Yourself!
+The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementTwo). 
+
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "EnhancementTwo" folder.
+3. Open the "Breakout - Enhancement Two" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
