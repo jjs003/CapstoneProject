@@ -71,6 +71,11 @@ A thorough code review helps catch potential issues early, improving code struct
 
 {% include youtube.html id="1ZgfcmOjpa4" %}
 
+<video width="640" height="360" controls>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/CodeReview.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
 ## Capstone Course Outcomes
 Listed below are the outcomes that have been met through each enhancement, as well as the code review, enhancement narratives, and the professional self-assessment provided at the beginning of this ePortfolio. 
 
@@ -82,19 +87,14 @@ Listed below are the outcomes that have been met through each enhancement, as we
 
 ## [Enhancement One](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne)
 
-<details class="details-reset border rounded-2" open="">
-  <summary class="px-3 py-2">
-    <svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-device-camera-video">
-    <path d="M16 3.75v8.5a.75.75 0 0 1-1.136.643L11 10.575v.675A1.75 1.75 0 0 1 9.25 13h-7.5A1.75 1.75 0 0 1 0 11.25v-6.5C0 3.784.784 3 1.75 3h7.5c.966 0 1.75.784 1.75 1.75v.675l3.864-2.318A.75.75 0 0 1 16 3.75Zm-6.5 1a.25.25 0 0 0-.25-.25h-7.5a.25.25 0 0 0-.25.25v6.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-6.5ZM11 8.825l3.5 2.1v-5.85l-3.5 2.1Z"></path>
-</svg>
-    <span aria-label="Video description 2025-02-20.11-15-11.mp4" class="m-1">2025-02-20.11-15-11.mp4</span>
-    <span class="dropdown-caret"></span>
-  </summary>
 
-  <video src="https://private-user-images.githubusercontent.com/27659242/415292139-23f35fee-d0f2-451a-9686-5245c19acd75.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAwNzQyNjksIm5iZiI6MTc0MDA3Mzk2OSwicGF0aCI6Ii8yNzY1OTI0Mi80MTUyOTIxMzktMjNmMzVmZWUtZDBmMi00NTFhLTk2ODYtNTI0NWMxOWFjZDc1Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIwVDE3NTI0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRiNGI1NjA0MDUwODQ2MDVjMDU5MGJkMGMzMDM4MGQ2NzhmYTQxYzkxMTkwMzc3YjlkMWNkNjk3YmNkZjE3ZTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TM2AhGyv1HZAcZrJRs0oHACU32xVqYyQJMWKntcDqYQ" data-canonical-src="https://private-user-images.githubusercontent.com/27659242/415292139-23f35fee-d0f2-451a-9686-5245c19acd75.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAwNzQyNjksIm5iZiI6MTc0MDA3Mzk2OSwicGF0aCI6Ii8yNzY1OTI0Mi80MTUyOTIxMzktMjNmMzVmZWUtZDBmMi00NTFhLTk2ODYtNTI0NWMxOWFjZDc1Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIwVDE3NTI0OVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTRiNGI1NjA0MDUwODQ2MDVjMDU5MGJkMGMzMDM4MGQ2NzhmYTQxYzkxMTkwMzc3YjlkMWNkNjk3YmNkZjE3ZTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.TM2AhGyv1HZAcZrJRs0oHACU32xVqYyQJMWKntcDqYQ" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
 
-  </video>
-</details>
+https://github.com/user-attachments/assets/c47001c4-1e7a-4ddb-8a7f-33066b7eb1bf
+
+<video src="https://private-user-images.githubusercontent.com/27659242/415375238-c47001c4-1e7a-4ddb-8a7f-33066b7eb1bf.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAwODc3MzUsIm5iZiI6MTc0MDA4NzQzNSwicGF0aCI6Ii8yNzY1OTI0Mi80MTUzNzUyMzgtYzQ3MDAxYzQtMWU3YS00ZGRiLThhN2YtMzMwNjZiN2ViMWJmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIwVDIxMzcxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3MTZhN2Q4Y2FjNTk1MzU4NGYwM2U3OWRhOWUyZDY0YTU4ZGYwNmQ0ZmY2MGY1NTIzZmQwMDQyNDFmZDkzYTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3gzFaDpF9ofWqpT70Ki15IcigM02FdG9PVs5Rlg-_ak" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+</video>
+
+
 
 The artifact I chose for my ePortfolio for all three enhancements is a project originally created during the coursework for CS 330: Computational Graphics and Visualization. The project began as a basic version of the game Breakout.  In its initial form, the program allowed the player to press the spacebar to release the ball, move the paddle side to side using the 'A'/left and 'D'/right keys, and break bricks with the ball. While it had the core functionality to allow the player to break all the bricks, it lacked additional logic to indicate level completion. Furthermore, when the ball passed the bottom of the screen, the level would simply restart without any further consequences or progression mechanics. This foundational version provided an excellent starting point for implementing the planned enhancements to expand the game's functionality and improve the user experience.
 
