@@ -3,12 +3,13 @@
     top: 20px;
     left: 20px;
     width: 220px;
-    background: #f8f9fa;
+    background: rgba(248, 249, 250, 0.9); /* Slight transparency */
     padding: 15px;
     border-radius: 5px;
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     line-height: 1.5;
+    z-index: 1000; /* Ensure it stays above content */
 }
 
 .toc h2 {
