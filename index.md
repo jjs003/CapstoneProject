@@ -60,9 +60,10 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 
 These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios.
 
+### Try it out for yourself!
 The Visual Studio files for the original artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/Original%20Artifact). 
 
-In order to run the game, you must first download the 'Breakout - Original Artifact' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
+In order to run this version of the game, you must first download the 'Breakout - Original Artifact' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
 
 ## Code Review
 Code reviews play a crucial role in software development, ensuring that code is efficient, maintainable, and aligned with best practices. This section includes a video walkthrough of my code review, conducted before implementing any modifications or enhancements. Through this review, I evaluate the existing functionality of my C++ game, inspired by the classic brick-breaker game Breakout, and identify areas for improvement.
@@ -70,11 +71,6 @@ Code reviews play a crucial role in software development, ensuring that code is 
 A thorough code review helps catch potential issues early, improving code structure, readability, and efficiency. In my review, I analyze key aspects such as logic, security, and documentation. I highlight areas that need refinement, such as optimizing game mechanics, enhancing code organization, and improving the code comments in order to make the code more understandable for future developers. Below, you can find my initial code review for the Breakout artifact.
 
 {% include youtube.html id="1ZgfcmOjpa4" %}
-
-<video width="640" height="360" controls>
-  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/CodeReview.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
 
 ## Capstone Course Outcomes
 Listed below are the outcomes that have been met through each enhancement, as well as the code review, enhancement narratives, and the professional self-assessment provided at the beginning of this ePortfolio. 
@@ -87,17 +83,18 @@ Listed below are the outcomes that have been met through each enhancement, as we
 
 ## [Enhancement One](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne)
 
-
-
-https://github.com/user-attachments/assets/c47001c4-1e7a-4ddb-8a7f-33066b7eb1bf
-
-<video src="https://private-user-images.githubusercontent.com/27659242/415375238-c47001c4-1e7a-4ddb-8a7f-33066b7eb1bf.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3NDAwODc3MzUsIm5iZiI6MTc0MDA4NzQzNSwicGF0aCI6Ii8yNzY1OTI0Mi80MTUzNzUyMzgtYzQ3MDAxYzQtMWU3YS00ZGRiLThhN2YtMzMwNjZiN2ViMWJmLm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNTAyMjAlMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjUwMjIwVDIxMzcxNVomWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPWU3MTZhN2Q4Y2FjNTk1MzU4NGYwM2U3OWRhOWUyZDY0YTU4ZGYwNmQ0ZmY2MGY1NTIzZmQwMDQyNDFmZDkzYTUmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.3gzFaDpF9ofWqpT70Ki15IcigM02FdG9PVs5Rlg-_ak" controls="controls" muted="muted" class="d-block rounded-bottom-2 border-top width-fit" style="max-height:640px; min-height: 200px">
+<video width="640" height="360" controls>
+  <source src=https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementOne.mp4 type="video/mp4">
+  Your browser does not support the video tag.
 </video>
-
-
 
 The artifact I chose for my ePortfolio for all three enhancements is a project originally created during the coursework for CS 330: Computational Graphics and Visualization. The project began as a basic version of the game Breakout.  In its initial form, the program allowed the player to press the spacebar to release the ball, move the paddle side to side using the 'A'/left and 'D'/right keys, and break bricks with the ball. While it had the core functionality to allow the player to break all the bricks, it lacked additional logic to indicate level completion. Furthermore, when the ball passed the bottom of the screen, the level would simply restart without any further consequences or progression mechanics. This foundational version provided an excellent starting point for implementing the planned enhancements to expand the game's functionality and improve the user experience.
 
 I selected this artifact for inclusion in my ePortfolio because it allowed me to create enhancements that demonstrate key software development skills and align closely with the course outcomes. The particle system showcases my ability to design computing solutions that balance algorithmic complexity with performance considerations (Course Outcome 3). Specifically, it highlights skills in managing dynamic visual effects, integrating shaders, and optimizing resource allocation to maintain frame rate stability. The use of industry-standard tools like OpenGL further underscores my ability to apply innovative techniques and tools (Course Outcome 4). Additionally, the enhancement reflects my ability to create visually engaging and professional-quality outputs that improve the overall user experience (Course Outcome 2). Following the completion of Enhancement One, the program’s aesthetic quality has been significantly improved, laying the groundwork for further enhancements that will continue to refine both its visual appeal and overall functionality. 
 
 The implementation of Enhancement One was a rewarding process, and I gained significant insights along the way.  Specifically, I learned how to design and implement a particle system from scratch, including creating a particle generator class, integrating it into the game loop, and using shaders for rendering effects. A substantial amount of additional effort was required to refine the comments and formatting across existing files, which took more time than I initially anticipated. During this process, I also identified areas in the existing code where improvements could be made, enabling me to streamline the code and simplify certain algorithmic aspects for better performance and readability. One particularly frustrating issue was a file loading error that kept me stuck for nearly an hour. This was due to an improperly formatted file path, as I had forgotten to include “../” at the beginning of the file name, causing the particle texture to fail to load. Creating the particle texture and modifying the sprite used for the ball also taught me a great deal about texture design and implementation. I used GIMP to design both, and I thoroughly enjoyed exploring the program’s features and learning how to apply them effectively. This experience not only enhanced my skills in graphics creation but also deepened my understanding of how textures contribute to the overall aesthetic and functionality of a game.
+
+### Try it out for yourself!
+The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne). 
+
+In order to run this version of the game, you must first download the 'Breakout - Enhancement One' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
