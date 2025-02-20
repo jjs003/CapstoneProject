@@ -58,12 +58,23 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 - Level selection and game-over/you-win mechanics to increase playability
 - High score tracking for individual levels utilizing an SQLite database
 
-These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios.
+These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios. A video demonstrating the original artifact can be seen below.
+
+<video width="640" height="360" controls>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/OriginalArtifact.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Try it out for yourself!
 The Visual Studio files for the original artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/Original%20Artifact). 
 
-In order to run this version of the game, you must first download the 'Breakout - Original Artifact' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "Original Artifact" folder.
+3. Open the "Breakout - Original Artifact" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
 
 ## Code Review
 Code reviews play a crucial role in software development, ensuring that code is efficient, maintainable, and aligned with best practices. This section includes a video walkthrough of my code review, conducted before implementing any modifications or enhancements. Through this review, I evaluate the existing functionality of my C++ game, inspired by the classic brick-breaker game Breakout, and identify areas for improvement.
@@ -97,4 +108,10 @@ The implementation of Enhancement One was a rewarding process, and I gained sign
 ### Try It Out For Yourself!
 The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne). 
 
-In order to run this version of the game, you must first download the 'Breakout - Enhancement One' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "EnhancementOne" folder.
+3. Open the "Breakout - Enhancement One" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
