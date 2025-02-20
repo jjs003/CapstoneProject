@@ -18,12 +18,14 @@
 <h1 align="center"> Welcome to Jeremy Snow’s </h1>
 <h1 align="center"> CS-499 Computer Science Capstone ePortfolio </h1>
 
-
+## Introduction to My ePortfolio
 Hello, my name is Jeremy Snow, and I appreciate you taking the time to review my ePortfolio. This ePortfolio represents the culmination of my dedication and hard work throughout my coursework at Southern New Hampshire University (SNHU). Its purpose is to showcase the skills and knowledge I have developed during my academic journey. This ePortfolio was created for the CS-499 Computer Science Capstone Course and is designed to display an artifact that has been enhanced in three different categories: Software Design and Engineering, Algorithms and Data Structures, and Databases.
 
 This ePortfolio includes a professional self-assessment, a code review of the original artifact prior to enhancement, and a section for each of the three enhancements, accompanied by reflection narratives that provide insight into each improvement. The artifact used for all three enhancements is a game, inspired by the classic brick-breaker game Breakout, that I created in C++ as part of the CS-330: Computer Graphics and Visualization coursework. Enhancements to the game include particle effects, level selection, game-over/you-win mechanics, and a system for tracking high scores that utilizes an SQLite database to store and retrieve the necessary data. These enhancements demonstrate my expertise in software design and engineering, algorithms and data structures, and databases, aligning with the Capstone course's five core outcomes. Through these improvements, I have strengthened my ability to write efficient, secure, and well-structured code that meets industry best practices.
 
 Thank you again for reviewing my ePortfolio. I hope it provides insight into my technical abilities, problem-solving skills, and growth as a computer scientist.
+
+<hr>
 
 ## Professional Self-Assessment
 
