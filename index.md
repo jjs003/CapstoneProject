@@ -15,8 +15,7 @@
   </ul>
 </div>
 
-<h1 align="center"> Welcome to Jeremy Snow’s </h1>
-<h1 align="center"> CS-499 Computer Science Capstone ePortfolio </h1>
+---
 
 ## Introduction to My ePortfolio
 Hello, my name is Jeremy Snow, and I appreciate you taking the time to review my ePortfolio. This ePortfolio represents the culmination of my dedication and hard work throughout my coursework at Southern New Hampshire University (SNHU). Its purpose is to showcase the skills and knowledge I have developed during my academic journey. This ePortfolio was created for the CS-499 Computer Science Capstone Course and is designed to display an artifact that has been enhanced in three different categories: Software Design and Engineering, Algorithms and Data Structures, and Databases.
@@ -79,14 +78,14 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 
 These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios.
 
-### Code Review
+## Code Review
 Code reviews play a crucial role in software development, ensuring that code is efficient, maintainable, and aligned with best practices. This section includes a video walkthrough of my code review, conducted before implementing any modifications or enhancements. Through this review, I evaluate the existing functionality of my C++ game, inspired by the classic brick-breaker game Breakout, and identify areas for improvement.
 
 A thorough code review helps catch potential issues early, improving code structure, readability, and efficiency. In my review, I analyze key aspects such as logic, security, and documentation. I highlight areas that need refinement, such as optimizing game mechanics, enhancing code organization, and improving the code comments in order to make the code more understandable for future developers. Below, you can find my initial code review for the Breakout artifact.
 
 {% include youtube.html id="1ZgfcmOjpa4" %}
 
-### Capstone Course Outcomes
+## Capstone Course Outcomes
 Listed below are the outcomes that have been met through each enhancement, as well as the code review, enhancement narratives, and the professional self-assessment provided at the beginning of this ePortfolio. 
 
 1. Employ strategies for building collaborative environments that enable diverse audiences to support organizational decision-making in the field of computer science.
