@@ -58,12 +58,23 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 - Level selection and game-over/you-win mechanics to increase playability
 - High score tracking for individual levels utilizing an SQLite database
 
-These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios.
+These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios. A video demonstrating the original artifact can be seen below.
+
+<video width="640" height="360" controls loop>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/OriginalArtifact.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 ### Try it out for yourself!
 The Visual Studio files for the original artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/Original%20Artifact). 
 
-In order to run this version of the game, you must first download the 'Breakout - Original Artifact' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "Original Artifact" folder.
+3. Open the "Breakout - Original Artifact" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
 
 ## Code Review
 Code reviews play a crucial role in software development, ensuring that code is efficient, maintainable, and aligned with best practices. This section includes a video walkthrough of my code review, conducted before implementing any modifications or enhancements. Through this review, I evaluate the existing functionality of my C++ game, inspired by the classic brick-breaker game Breakout, and identify areas for improvement.
@@ -83,7 +94,7 @@ Listed below are the outcomes that have been met through each enhancement, as we
 
 ## [Enhancement One](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne)
 
-<video width="640" height="360" controls>
+<video width="640" height="360" controls loop>
   <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementOne.mp4" type="video/mp4">
   Your browser does not support the video tag.
 </video>
@@ -97,4 +108,76 @@ The implementation of Enhancement One was a rewarding process, and I gained sign
 ### Try It Out For Yourself!
 The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne). 
 
-In order to run this version of the game, you must first download the 'Breakout - Enhancement One' folder, then navigate to the 'x64' folder, and click on the .exe file contained inside.
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "EnhancementOne" folder.
+3. Open the "Breakout - Enhancement One" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
+
+## [Enhancement Two](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementTwo)
+
+<video width="640" height="360" controls loop>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementTwo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+The artifact modified for Enhancement Two is the same program used for Enhancement One. The code for this artifact was initially developed as part of the CS 330: Computational Graphics and Visualization coursework. It started as a basic version of the game Breakout, where the player could press the spacebar to release the ball, move the paddle left and right using the 'A'/left arrow and 'D'/right arrow keys, and break bricks with the ball. While the original artifact had the core functionality to allow the player to break all the bricks, it lacked additional logic to indicate level completion. Furthermore, when the ball passed the bottom of the screen, the level simply restarted without any progression or consequences. Following the completion of Enhancement One, the artifact was improved by adding a particle trail behind the ball. Enhancement Two further expanded the gameplay by introducing new features, such as a ‘lives’ counter, a level selection menu, and game-over/you-win screens.
+
+I chose the Breakout game code as the artifact for this enhancement for several reasons. First, I thoroughly enjoyed working on this project during the CS 330 coursework, and I saw an opportunity to expand upon its barebones state by adding meaningful functionality. Additionally, I have a passion for creating experiences that others can enjoy, and game design is a field that I am actively considering as a potential career path. This project also provided a stable foundation for implementing enhancements that showcase key software development skills while aligning closely with the course outcomes for the Capstone Course.
+
+Throughout the implementation of this enhancement, my skills in algorithms and data structures are clearly demonstrated. The creation of the level selection menu showcases my ability to develop computing solutions that address specific problems using established computer science and algorithmic principles, while effectively managing trade-offs in system design (Course Outcome 3). In addition, the development of the TextRenderer class, the integration of shaders, and the utilization of the FreeType library demonstrate my proficiency with advanced graphics programming techniques and innovative tools. These efforts culminated in a polished and professional-quality user experience, aligning with Course Outcome 4. Lastly, the addition of the game menu and other on-screen communications showcases my capability to design, develop and deliver content that is coherent, technically sound, and tailored to the needs of the intended audience (Course Outcome 2). 
+
+With the completion of Enhancement Two, the Breakout artifact became significantly more appealing to users, offering a more dynamic and enjoyable gameplay experience. Players gained the ability to select from six unique levels, take advantage of multiple attempts to complete a stage, and experience more engaging in-game communications. This enhancement successfully fulfilled the intended course outcomes for this stage. My plans for outcome coverage remained unchanged, and I proceeded as planned with the final enhancement.
+
+Developing this enhancement was more complex than Enhancement One and provided valuable learning experiences. Integrating the FreeType library into my solution required a solid understanding of its fundamentals, which involved carefully reviewing documentation to ensure proper implementation. After completing the initial code for FreeType, I encountered an issue that left me stumped for several hours. Since I had never worked with FreeType before, I initially assumed there was a setup error. However, the actual problem turned out to be a simple omission: I had forgotten to bind the texture in OpenGL when loading each glyph. As a result, no errors were thrown, but no text appeared on the screen either. Once I resolved this issue and successfully rendered text, I focused on refining the layout, colors, and wording of the game screens. The process was both challenging and rewarding, and I am very pleased with the final result.
+
+
+### Try It Out For Yourself!
+The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementTwo). 
+
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "EnhancementTwo" folder.
+3. Open the "Breakout - Enhancement Two" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
+
+## [Enhancement Three](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementThree)
+
+<video width="640" height="360" controls loop>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartOne.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<video width="640" height="360" controls loop>
+  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartTwo.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+For Enhancement Three, the final improvement has been implemented in the Breakout game developed during the coursework for CS 330: Computational Graphics and Visualization. This enhancement expands upon the original basic version of Breakout by adding the ability to save high scores to a local SQLite database. Each level now has a dedicated high score leaderboard containing the top 10 fastest completion times, which can be accessed by pressing the ‘H’ key from the level select screen or after achieving a new high score. When a high score is recorded, players can enter a username, limited to 10 alphanumeric characters, to be added to the leaderboard. Additionally, the collision mechanics between the paddle and ball have been refined to provide a more realistic gameplay experience.
+
+In addition to the reasons outlined in my previous narratives, continuing to use Breakout for the final enhancement just seemed like the right choice. Adding a high score leaderboard to any game is a great way to incentivize engagement. Everyone wants to have a high score! Beyond the gameplay benefits, integrating a database and high score system into this project also provided a unique challenge that aligned with key course outcomes. This enhancement showcases my ability to design and implement persistent data storage using SQLite, reinforcing my proficiency in database integration, data retrieval, and performance optimization. Additionally, the process of refining the leaderboard system required me to apply principles of efficient querying and data management, further strengthening my expertise in backend development.
+
+With the completion of Enhancement Three, all previously outlined course outcomes for this stage were successfully met. By incorporating a local SQLite database to track high scores, I applied algorithmic principles and computer science practices to address the challenge of persistent data storage and retrieval (Course Outcome 3). I evaluated different storage methods and ultimately selected SQLite for its efficiency and ease of integration within the existing C++ codebase. Additionally, implementing SQL queries and database management within a game environment demonstrated my ability to utilize innovative tools and techniques in computing practices (Course Outcome 4).
+
+Security was another key focus of this enhancement. I implemented input validation to ensure that only properly formatted usernames were stored in the database, preventing potential errors or exploits (Course Outcome 5). The design of the high score leaderboards also required a clear and user-friendly interface for displaying rankings, aligning with the objective of delivering professional-quality visual communications in a gaming context (Course Outcome 2).
+
+Although I worked on this project independently, I applied decision-making strategies that mirrored those used in collaborative environments. I carefully considered various approaches to data storage, UI design, and input validation, making informed choices based on the perceived user experience and system efficiency (Course Outcome 1). This process required balancing different trade-offs while ensuring the enhancement provided meaningful value to the overall gameplay experience.
+
+During the process of Enhancement Three’s implementation, I gained a deeper understanding of database integration within game development, reinforcing my ability to design efficient data storage solutions. Before this course, my experience with SQLite was limited to a guided learning experience. Designing this solution from scratch required me to develop a deeper understanding of the tool, and after this enhancement, I feel much more confident in my skills. Among the three enhancements, this was the most complex and required a more incremental approach. 
+
+Along the way, I encountered several challenges that deepened my problem-solving abilities. One particularly frustrating issue stemmed from how I instantiated the database in the Game.cpp file. Initially, I created a local copy of the database inside the initialization method, causing it to go out of scope as soon as the method exited. After debugging, I resolved the issue by modifying the code to create a pointer stored in a global variable, ensuring persistent access throughout the program. Another challenge involved centering text horizontally on the screen for the high score display. To address this, I extended the TextRenderer class by implementing a method that renders strings horizontally centered at a given vertical position. Ultimately, this enhancement not only improved the Breakout game but also provided a valuable learning experience in software development. It strengthened my skills in database management, security, UI design, and algorithmic problem-solving, making it a strong artifact for my ePortfolio.
+
+### Try It Out For Yourself!
+The Visual Studio files for this version of the artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementThree). 
+
+To run this version of the game:
+
+1. Download the repository.
+2. Open the "EnhancementThree" folder.
+3. Open the "Breakout - Enhancement Three" folder.
+4. Navigate to the "x64" folder.
+5. Run the .exe file inside.
