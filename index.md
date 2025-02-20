@@ -1,22 +1,4 @@
-<link rel="stylesheet" href="assets/css/custom.css">
-<div class="toc">
-  <h2>Table of Contents</h2>
-  <ul>
-    <li><a href="#professional-self-assessment">Professional Self-Assessment</a></li>
-    <li><a href="#collaboration-and-teamwork">Collaboration and Teamwork</a></li>
-    <li><a href="#effective-communication-and-documentation">Effective Communication and Documentation</a></li>
-    <li><a href="#data-structures-and-algorithms">Data Structures and Algorithms</a></li>
-    <li><a href="#software-engineering-and-database-management">Software Engineering and Database Management</a></li>
-    <li><a href="#software-security-and-secure-coding">Software Security and Secure Coding</a></li>
-    <li><a href="#exploring-different-areas-of-computer-science">Exploring Different Areas of Computer Science</a></li>
-    <li><a href="#artifact-enhancement-overview-and-eportfolio-summary">Artifact Enhancement Overview</a></li>
-    <li><a href="#code-review">Code Review</a></li>
-    <li><a href="#capstone-course-outcomes">Capstone Course Outcomes</a></li>
-  </ul>
-</div>
-
----
-
+{% include toc.html %}
 ## Introduction to My ePortfolio
 Hello, my name is Jeremy Snow, and I appreciate you taking the time to review my ePortfolio. This ePortfolio represents the culmination of my dedication and hard work throughout my coursework at Southern New Hampshire University (SNHU). Its purpose is to showcase the skills and knowledge I have developed during my academic journey. This ePortfolio was created for the CS-499 Computer Science Capstone Course and is designed to display an artifact that has been enhanced in three different categories: Software Design and Engineering, Algorithms and Data Structures, and Databases.
 
