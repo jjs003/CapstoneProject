@@ -60,6 +60,10 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 
 These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios.
 
+The files for the original artifact as well as a working portable application folder are located [here](Original Artifact). 
+
+In order to run the game, you must first download the repository. Then, navigate to the 'Breakout - Original Artifact' folder, then 'x64', and click on the .exe file contained inside.
+
 ## Code Review
 Code reviews play a crucial role in software development, ensuring that code is efficient, maintainable, and aligned with best practices. This section includes a video walkthrough of my code review, conducted before implementing any modifications or enhancements. Through this review, I evaluate the existing functionality of my C++ game, inspired by the classic brick-breaker game Breakout, and identify areas for improvement.
 
@@ -76,7 +80,7 @@ Listed below are the outcomes that have been met through each enhancement, as we
 4. Demonstrate an ability to use well-founded and innovative techniques, skills, and tools in computing practices for the purpose of implementing computer solutions that deliver value and accomplish industry-specific goals.
 5. Develop a security mindset that anticipates adversarial exploits in software architecture and designs to expose potential vulnerabilities, mitigate design flaws, and ensure privacy and enhanced security of data and resources.
 
-## Enhancement One
+## [Enhancement One](EnhancementOne)
 
 https://github.com/user-attachments/assets/23f35fee-d0f2-451a-9686-5245c19acd75
 
