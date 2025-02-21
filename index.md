@@ -201,11 +201,9 @@ To run this version of the game:
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    var toc = document.getElementById("toc");
-    var mainContent = document.getElementById("main_content");
-    var header = document.getElementById("header_wrap");
-  
-    document.body.appendChild(toc);
+    const toc = document.querySelector(".toc");
+    const header = document.querySelector("#header_wrap"); // Select header wrapper
+    const headerOffset = header.offsetHeight; 
 
     window.addEventListener("scroll", function () {
         if (window.scrollY > headerOffset) {
