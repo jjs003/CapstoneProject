@@ -53,6 +53,7 @@
         width: 18vw;
     }
     .main_content {
+        position: relative;
         margin-left: calc(18vw + 20px);
     }
 }
