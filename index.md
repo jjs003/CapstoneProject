@@ -201,7 +201,7 @@ To run this version of the game:
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-  var toc = document.getElementById("toc");
+  var toc = document.querySelector(".toc");
   var header = document.getElementById("header_wrap");
   var headerOffset = header.offsetHeight;
   var headerBottom = header.getBoundingClientRect().bottom;
