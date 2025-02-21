@@ -197,3 +197,20 @@ To run this version of the game:
 3. Open the "Breakout - Enhancement Three" folder.
 4. Navigate to the "x64" folder.
 5. Run the .exe file inside.
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const toc = document.querySelector(".toc");
+    const header = document.querySelector("#header_wrap");
+    const headerOffset = header.offsetHeight; 
+
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > headerOffset) {
+            toc.classList.add("fixed-toc");
+        } else {
+            toc.classList.remove("fixed-toc");
+        }
+    });
+});
+</script>
