@@ -85,6 +85,7 @@ Code reviews play a crucial role in software development, ensuring that code is 
 A thorough code review helps catch potential issues early, improving code structure, readability, and efficiency. In my review, I analyze key aspects such as logic, security, and documentation. I highlight areas that need refinement, such as optimizing game mechanics, enhancing code organization, and improving the code comments in order to make the code more understandable for future developers. Below, you can find my initial code review for the Breakout artifact.
 
 {% include youtube.html id="1ZgfcmOjpa4" %}
+*Code Review for the original Breakout artifact*
 
 ## Capstone Course Outcomes
 Listed below are the outcomes that have been met through each enhancement, as well as the code review, enhancement narratives, and the professional self-assessment provided at the beginning of this ePortfolio. 
@@ -171,7 +172,7 @@ To run this version of the game:
   Your browser does not support the video tag.
   </video>
 </div>
-*This video depicts the changes made with Enhancement Three, focusing on gameplay and username entry.*
+*This video depicts the changes made with Enhancement Three, focusing on gameplay and username entry after a high score is achieved.*
 
 For Enhancement Three, the final improvement has been implemented in the Breakout game developed during the coursework for CS 330: Computational Graphics and Visualization. This enhancement expands upon the original basic version of Breakout by adding the ability to save high scores to a local SQLite database. Each level now has a dedicated high score leaderboard containing the top 10 fastest completion times, which can be accessed by pressing the ‘H’ key from the level select screen or after achieving a new high score. When a high score is recorded, players can enter a username, limited to 10 alphanumeric characters, to be added to the leaderboard. Additionally, the collision mechanics between the paddle and ball have been refined to provide a more realistic gameplay experience.
 
