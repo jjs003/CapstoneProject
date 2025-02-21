@@ -6,7 +6,7 @@ html, body {
 .toc {
     position: absolute;
     top: 224px;
-    left: 15px;
+    left: 20px;
     width: 300px;
     max-height: calc(100vh - 60px);
     overflow-y: auto;
@@ -21,7 +21,7 @@ html, body {
 
 .fixed-toc {
     position: fixed; /* Becomes fixed when header scrolls away */
-    top: 15px; 
+    top: 20px; 
 }
 
 .toc h2 {
