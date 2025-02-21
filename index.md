@@ -204,19 +204,16 @@ document.addEventListener("DOMContentLoaded", function () {
   var toc = document.querySelector(".toc");
   var header = document.getElementById("header_wrap");
   var headerOffset = header.offsetHeight;
-  var headerBottom = header.getBoundingClientRect().bottom;
 
   document.body.appendChild(toc);
 
-  window.addEventListener("scroll", function () {
-    var headerBottom = header.getBoundingClientRect().bottom;
-    
+  window.addEventListener("scroll", function () {    
     if (window.scrollY > headerOffset) {
         toc.classList.add("fixed-toc");
         toc.style.top = "15px";
     } else {
         toc.classList.remove("fixed-toc");
-        toc.style.top = `${headerBottom + 15}px`;
+        toc.style.top = `${headerOffset + 15}px`;
     }
   });
 });
