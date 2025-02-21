@@ -202,7 +202,7 @@ To run this version of the game:
 <script>
 document.addEventListener("DOMContentLoaded", function () {
   var toc = document.querySelector(".toc");
-  var header = document.querySelector("#header_wrap"); // Select header wrapper
+  var header = document.querySelector("#header_wrap");
   var headerOffset = header.offsetHeight;
   var mainContent = document.getElementById("main_content");
   var headerBottom = header.getBoundingClientRect().bottom;
@@ -212,6 +212,7 @@ document.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("scroll", function () {
       if (window.scrollY > headerOffset) {
           toc.classList.add("fixed-toc");
+          toc.style.top = "15px";
       } else {
           toc.classList.remove("fixed-toc");
           toc.style.top = `${headerBottom + 15}px`;
