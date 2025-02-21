@@ -2,13 +2,15 @@
     position: fixed;
     top: 15px;
     left: 15px;
-    width: 350px;
+    width: 300px;
+    max-height: 80vh;
+    overflow-y: auto;
     background: #2e3b4e;
     color: #ffffff;
     padding: 15px;
     border-radius: 8px;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
-    font-size: 13px;
+    font-size: 15px;
     line-height: 1.2;
 }
 
@@ -51,7 +53,7 @@
     margin-left: 260px; 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1920px) {
     .toc {
         display: none;
     }
