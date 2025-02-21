@@ -68,7 +68,7 @@ These enhancements demonstrate my proficiency in software design and engineering
 </div>
 *This video depicts the original Breakout artifact before any changes were made.*
 
-### Try it out for yourself!
+### Try It Out For Yourself!
 The Visual Studio files for the original artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/Original%20Artifact). 
 
 To run this version of the game:
