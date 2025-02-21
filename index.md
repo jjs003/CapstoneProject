@@ -205,6 +205,7 @@ document.addEventListener("DOMContentLoaded", function () {
   var header = document.querySelector("#header_wrap"); // Select header wrapper
   var headerOffset = header.offsetHeight;
   var mainContent = document.getElementById("main_content");
+  var headerBottom = header.getBoundingClientRect().bottom;
 
   document.body.appendChild(toc);
 
@@ -213,6 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
           toc.classList.add("fixed-toc");
       } else {
           toc.classList.remove("fixed-toc");
+          toc.style.top = `${headerBottom + 15}px`;
       }
   });
 });
