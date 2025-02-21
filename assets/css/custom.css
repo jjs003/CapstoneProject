@@ -54,13 +54,7 @@
 
 @media (max-width: 1388px) {
     .toc {
-        display: none;
-    }
-}
-
-@media (max-width: 1388px) {
-    .toc {
-        width: 18vw; /* Makes it responsive to the window size */
-        min-width: 180px; /* Prevents it from becoming too small */
+        width: 18vw;
+        min-width: 180px;
     }
 }
