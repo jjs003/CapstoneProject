@@ -10,7 +10,7 @@ This ePortfolio serves as the final project for my CS-499 Computer Science Capst
 - **Capstone Course Outcomes** – A summary of how my work aligns with the capstone course learning objectives, presented through each enhancement narrative.
 
 ## View the ePortfolio  
-🔗 [Click here to visit my ePortfolio](https://jjs003.github.io/CapstoneProject/)  
+[Click here to visit my ePortfolio](https://jjs003.github.io/CapstoneProject/)  
 
 ## Technologies Used  
 - **Jekyll** (GitHub Pages theme: Slate)  
