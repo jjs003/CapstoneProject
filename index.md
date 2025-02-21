@@ -209,13 +209,15 @@ document.addEventListener("DOMContentLoaded", function () {
   document.body.appendChild(toc);
 
   window.addEventListener("scroll", function () {
-      if (window.scrollY > headerOffset) {
-          toc.classList.add("fixed-toc");
-          toc.style.top = "15px";
-      } else {
-          toc.classList.remove("fixed-toc");
-          toc.style.top = `${headerBottom + 15}px`;
-      }
+    var headerBottom = header.getBoundingClientRect().bottom;
+    
+    if (window.scrollY > headerOffset) {
+        toc.classList.add("fixed-toc");
+        toc.style.top = "15px";
+    } else {
+        toc.classList.remove("fixed-toc");
+        toc.style.top = `${headerBottom + 15}px`;
+    }
   });
 });
 </script>
