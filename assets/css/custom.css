@@ -53,7 +53,7 @@
         width: 18vw;
     }
     .main_content {
-        position: relative;
-        margin-left: calc(18vw + 20px);
+        margin-left: calc(18vw + 20px) !important;
+        margin-right: auto;
     }
 }
