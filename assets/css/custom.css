@@ -74,6 +74,10 @@ html, body {
   height: 100%;
 }
 
+#main_content {
+        padding-top: 15px;
+    }
+
 @media (max-width: 1388px) {
     .toc {
         width: 21.6vw;
