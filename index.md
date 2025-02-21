@@ -60,10 +60,12 @@ This ePortfolio serves as the culmination of my work throughout the Computer Sci
 
 These enhancements demonstrate my proficiency in software design and engineering, algorithms and data structures, and database management, aligning with the Capstone course's five core outcomes. Additionally, my professional self-assessment highlights the technical and collaborative skills I have developed across the SNHU computer science program. Below, you will find a code review for the original artifact, prior to the three enhancements. Following the code review, a section for each enhancement will feature a narrative that explains why the artifact was selected for enhancement, how the enhancements improved it, and what I learned throughout the enhancement process. Each narrative will also reflect on the technical skills and problem-solving techniques I applied during the enhancements, as well as the challenges I faced. Through this process, I demonstrate the depth of my understanding of software development and the ability to refine and optimize code based on real-world application scenarios. A video demonstrating the original artifact can be seen below.
 
-<video width="640" height="360" controls loop>
-  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/OriginalArtifact.mp4" type="video/mp4">
+<div class="video-container">
+  <video controls loop>
+    <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/OriginalArtifact.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+  </video>
+</div>
 
 ### Try it out for yourself!
 The Visual Studio files for the original artifact as well as a working portable application folder are located [here](https://github.com/jjs003/CapstoneProject/tree/main/Original%20Artifact). 
@@ -94,10 +96,12 @@ Listed below are the outcomes that have been met through each enhancement, as we
 
 ## [Enhancement One](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementOne)
 
-<video width="640" height="360" controls loop>
-  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementOne.mp4" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+<div class="video-container">
+  <video controls loop>
+    <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementOne.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
 
 The artifact I chose for my ePortfolio for all three enhancements is a project originally created during the coursework for CS 330: Computational Graphics and Visualization. The project began as a basic version of the game Breakout.  In its initial form, the program allowed the player to press the spacebar to release the ball, move the paddle side to side using the 'A'/left and 'D'/right keys, and break bricks with the ball. While it had the core functionality to allow the player to break all the bricks, it lacked additional logic to indicate level completion. Furthermore, when the ball passed the bottom of the screen, the level would simply restart without any further consequences or progression mechanics. This foundational version provided an excellent starting point for implementing the planned enhancements to expand the game's functionality and improve the user experience.
 
@@ -118,10 +122,12 @@ To run this version of the game:
 
 ## [Enhancement Two](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementTwo)
 
-<video width="640" height="360" controls loop>
-  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementTwo.mp4" type="video/mp4">
+<div class="video-container">
+  <video controls loop>
+    <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementTwo.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+  </video>
+</div>
 
 The artifact modified for Enhancement Two is the same program used for Enhancement One. The code for this artifact was initially developed as part of the CS 330: Computational Graphics and Visualization coursework. It started as a basic version of the game Breakout, where the player could press the spacebar to release the ball, move the paddle left and right using the 'A'/left arrow and 'D'/right arrow keys, and break bricks with the ball. While the original artifact had the core functionality to allow the player to break all the bricks, it lacked additional logic to indicate level completion. Furthermore, when the ball passed the bottom of the screen, the level simply restarted without any progression or consequences. Following the completion of Enhancement One, the artifact was improved by adding a particle trail behind the ball. Enhancement Two further expanded the gameplay by introducing new features, such as a ‘lives’ counter, a level selection menu, and game-over/you-win screens.
 
@@ -147,15 +153,19 @@ To run this version of the game:
 
 ## [Enhancement Three](https://github.com/jjs003/CapstoneProject/tree/main/EnhancementThree)
 
-<video width="640" height="360" controls loop>
-  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartOne.mp4" type="video/mp4">
+<div class="video-container">
+  <video controls loop> 
+    <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartOne.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+  </video>
+</div>
 
-<video width="640" height="360" controls loop>
-  <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartTwo.mp4" type="video/mp4">
+<div class="video-container">
+  <video controls loop>
+    <source src="https://github.com/jjs003/CapstoneProject/raw/refs/heads/main/assets/videos/EnhancementThree-PartTwo.mp4" type="video/mp4">
   Your browser does not support the video tag.
-</video>
+  </video>
+</div>
 
 For Enhancement Three, the final improvement has been implemented in the Breakout game developed during the coursework for CS 330: Computational Graphics and Visualization. This enhancement expands upon the original basic version of Breakout by adding the ability to save high scores to a local SQLite database. Each level now has a dedicated high score leaderboard containing the top 10 fastest completion times, which can be accessed by pressing the ‘H’ key from the level select screen or after achieving a new high score. When a high score is recorded, players can enter a username, limited to 10 alphanumeric characters, to be added to the leaderboard. Additionally, the collision mechanics between the paddle and ball have been refined to provide a more realistic gameplay experience.
 
