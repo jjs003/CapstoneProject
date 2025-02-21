@@ -48,16 +48,11 @@
     text-decoration: none;
 }
 
-/* Ensure main content doesn't overlap */
-.main-content {
-    margin-left: 260px; 
-}
-
 @media (max-width: 1388px) {
     .toc {
         width: 18vw;
     }
-    .main-content {
+    .main_content {
         margin-left: calc(18vw + 20px);
     }
 }
