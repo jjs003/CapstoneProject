@@ -201,16 +201,19 @@ To run this version of the game:
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    const toc = document.querySelector(".toc");
-    const header = document.querySelector("#header_wrap"); // Select header wrapper
-    const headerOffset = header.offsetHeight; 
+  var toc = document.querySelector(".toc");
+  var header = document.querySelector("#header_wrap"); // Select header wrapper
+  var headerOffset = header.offsetHeight;
+  var mainContent = document.getElementById("main_content");
 
-    window.addEventListener("scroll", function () {
-        if (window.scrollY > headerOffset) {
-            toc.classList.add("fixed-toc");
-        } else {
-            toc.classList.remove("fixed-toc");
-        }
-    });
+  document.body.appendChild(toc);
+
+  window.addEventListener("scroll", function () {
+      if (window.scrollY > headerOffset) {
+          toc.classList.add("fixed-toc");
+      } else {
+          toc.classList.remove("fixed-toc");
+      }
+  });
 });
 </script>
