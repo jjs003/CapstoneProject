@@ -3,7 +3,6 @@
     top: 15px;
     left: 15px;
     width: 300px;
-    max-height: 80vh;
     overflow-y: auto;
     background: #2e3b4e;
     color: #ffffff;
@@ -53,7 +52,7 @@
     margin-left: 260px; 
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1388px) {
     .toc {
         display: none;
     }
