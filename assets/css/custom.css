@@ -4,8 +4,8 @@ html, body {
 }
 
 .toc {
-    position: fixed;
-    top: 15px;
+    position: absolute;
+    top: 229px;
     left: 15px;
     width: 300px;
     max-height: calc(100vh - 60px);
@@ -17,6 +17,12 @@ html, body {
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
     font-size: 15px;
     line-height: 1.2;
+    transition: top 0.3s ease-in-out;
+}
+
+.fixed-toc {
+    position: fixed; /* Becomes fixed when header scrolls away */
+    top: 15px; 
 }
 
 .toc h2 {
@@ -72,7 +78,6 @@ html, body {
 @media (max-width: 1388px) {
     .toc {
         width: 21.6vw;
-        top: 229px;
     }
     #main_content {
         margin-left: calc(21.6vw + 50px);
