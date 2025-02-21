@@ -50,9 +50,9 @@
 
 @media (max-width: 1388px) {
     .toc {
-        width: 18vw;
+        width: 21.6vw;
     }
     #main_content {
-        margin-left: calc(18vw + 20px);
+        margin-left: calc(21.6vw + 50px);
     }
 }
