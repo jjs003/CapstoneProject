@@ -79,7 +79,7 @@ html, body {
         width: 21.6vw;
     }
     #main_content {
-        margin-left: calc(21.6vw + 50px);
+        margin-left: calc(21.6vw + 80px);
     }
 }
 
