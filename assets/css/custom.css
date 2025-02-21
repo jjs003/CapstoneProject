@@ -57,3 +57,12 @@
         margin-left: calc(21.6vw + 50px);
     }
 }
+
+@media (max-width: 540px) {
+    .toc {
+        view: none;
+    }
+    #main_content {
+        margin: 0 auto;
+    }
+}
