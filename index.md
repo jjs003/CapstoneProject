@@ -204,21 +204,15 @@ document.addEventListener("DOMContentLoaded", function () {
     var toc = document.getElementById("toc");
     var mainContent = document.getElementById("main_content");
     var header = document.getElementById("header_wrap");
+  
+    document.body.appendChild(toc);
 
-    if (toc && mainContent && header) {
-        // Move TOC to be a direct child of body
-        document.body.appendChild(toc);
-
-        function updateTOCPosition() {
-            var headerBottom = header.getBoundingClientRect().bottom;
-            if (headerBottom <= 20) {
-                toc.classList.add("fixed-toc");
-            } else {
-                toc.classList.remove("fixed-toc");
-            }
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > headerOffset) {
+            toc.classList.add("fixed-toc");
+        } else {
+            toc.classList.remove("fixed-toc");
         }
-
-        window.addEventListener("scroll", updateTOCPosition);
-    }
+    });
 });
 </script>
