@@ -63,6 +63,12 @@ html, body {
     }
 }
 
+@media (max-width: 682px) {
+    .toc {
+        top: 292px;
+    }
+}
+
 @media (max-width: 540px) {
     .toc {
         display: none;
