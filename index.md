@@ -211,10 +211,10 @@ document.addEventListener("DOMContentLoaded", function () {
   function updateTOCPosition() {
     if (window.scrollY > headerOffset) {
         toc.classList.add("fixed-toc");
-        toc.style.top = "15px";
+        toc.style.top = "20px";
     } else {
         toc.classList.remove("fixed-toc");
-        toc.style.top = `${headerOffset + 15}px`;
+        toc.style.top = `${headerOffset + 20}px`;
     }
   }
 
