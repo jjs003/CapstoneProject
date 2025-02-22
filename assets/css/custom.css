@@ -12,11 +12,11 @@ html, body {
     overflow-y: auto;
     background: #2e3b4e;
     color: #ffffff;
-    padding: 15px;
+    padding: 12px;
     border-radius: 8px;
     box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2);
-    font-size: 15px;
-    line-height: 1.2;
+    font-size: 13px;
+    line-height: 1.1;
 }
 
 .fixed-toc {
