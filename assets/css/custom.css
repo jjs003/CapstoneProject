@@ -8,7 +8,7 @@ html, body {
     top: 224px;
     left: 20px;
     width: 300px;
-    max-height: calc(100vh - 140px);
+    max-height: calc(100vh - 150px);
     overflow-y: auto;
     background: #2e3b4e;
     color: #ffffff;
